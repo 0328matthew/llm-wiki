@@ -1,0 +1,24 @@
+# --- Obsidian UI state (변경이 잦고 git 관리 불필요) ---
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/workspace.json.bak
+
+# --- Obsidian plugin data (개인 캐시/세팅) ---
+.obsidian/plugins/*/data.json
+.obsidian/cache/
+
+# --- Obsidian 트래시/리비전 (vault 내부 휴지통) ---
+.trash/
+.obsidian/trash/
+
+# --- OS / 편집기 ---
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+
+# --- 첨부 파일 중 대용량 ---
+# (필요 시 활성화)
+# 99-Attachments/*.pdf
+# 99-Attachments/*.mp4

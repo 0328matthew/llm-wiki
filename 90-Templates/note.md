@@ -1,7 +1,7 @@
 ---
 title: ""
 tags: []
-created: 
+created: {{date:YYYY-MM-DD}}
 ---
 
 ## 한 줄 요약
