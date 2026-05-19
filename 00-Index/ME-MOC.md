@@ -56,10 +56,11 @@ tags: [moc, me, mechanical-engineering]
 - [[4-bar 메커니즘]]
 
 ### Materials Science — 재료공학
-> 위치: `20-ME/MaterialsScience/` · 결정구조, 상태도, 파괴, 열처리
-- [[결정구조 (FCC/BCC/HCP)]]
-- [[Stress-Strain Curve]]
-- [[Fe-C 상태도]]
+> 위치: `20-ME/MaterialsScience/` · 결정구조, 결함, 강화기구, 파괴, 상태도, 열처리
+- 강의 노트:
+  - [[Lecture01 원자구조와 결정구조]] — 결합·FCC/BCC/HCP·Miller index·결함
+  - [[Lecture02 확산과 기계적 성질]] — Fick·응력변형·전위·강화 5기구·Hall-Petch
+  - [[Lecture03 파괴·상태도·금속합금]] — Griffith·$K_{IC}$·피로·크리프·Fe-C·열처리
 
 ## 응용수학 → [[Math-MOC]]
 
