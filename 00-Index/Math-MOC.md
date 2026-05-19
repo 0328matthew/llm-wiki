@@ -19,13 +19,13 @@ tags: [moc, math]
 - [[ODE 수치해법]] — Euler, RK4
 
 ## Differential Equations — 미분방정식
-> 위치: `25-Math/DifferentialEquations/`
-- [[ODE 분류]] — 차수, 선형/비선형, 동차/비동차
-- [[1계 ODE 풀이법]] — 분리변수, 적분인자, 완전미분
-- [[2계 선형 ODE]] — 상수계수, Wronskian
-- [[Laplace 변환]] — 회로/진동/제어에서의 활용
-- [[Fourier 급수와 변환]]
-- [[PDE 입문]] — Heat, Wave, Laplace equation
+> 위치: `25-Math/DifferentialEquations/` · Zill 교재 기반, 양민진 교수 강의 (PNU)
+- [[Ch1 미분방정식 입문]] — 분류·해·IVP
+- [[Ch2 1계 미분방정식 풀이법]] — 분리·선형·완전·치환·Euler
+- [[Ch3 1계 미분방정식 응용]] — 붕괴/냉각/RC/혼합/logistic/Lotka-Volterra
+- [[Ch4 고계 선형 미분방정식]] — 특성방정식·미정계수·매개변수 변환·Cauchy-Euler
+- [[Ch5 고계 ODE 모델링]] — 스프링/질량·RLC·공명·BVP·좌굴
+- [[Ch7 Laplace 변환]] — 정의·평행이동·δ함수·컨볼루션·연립 ODE
 
 ## 왜 이걸 LLM 위키에 두는가?
 - 수치해석 → **시뮬레이션 결과 해석** + **LLM에게 수치 문제 위임**할 때 한계 이해

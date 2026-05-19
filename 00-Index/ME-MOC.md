@@ -42,11 +42,13 @@ tags: [moc, me, mechanical-engineering]
 - [[Reynolds 수와 유동 영역]]
 - [[Navier–Stokes 방정식]] (개념)
 
-### Mechanics of Materials — 재료역학
-> 위치: `20-ME/MechanicsOfMaterials/` · 응력·변형률, 보의 휨, 비틀림
-- [[응력과 변형률]]
-- [[Mohr's Circle]]
-- [[보의 휨 (Bending)]]
+### Mechanics of Materials — 재료역학 / 고체역학
+> 위치: `20-ME/MechanicsOfMaterials/` · 평형·응력·축하중·비틀림·굽힘·처짐
+- 강의 노트 (이태경 교수, PNU):
+  - [[SM1 정역학 복습]] — FBD·평형·지지조건
+  - [[SM2 축 하중]] — σ-ε·Hooke·AFD/ADD·부정정·열응력·변형에너지·충격
+  - [[SM3 비틀림]] — τ=Tρ/I_p·비틀림각·TMD/TDD·동력 전달
+  - [[SM4 굽힘과 처짐]] — SFD/BMD·flexure·shear formula·EI y''=M(x)·중첩
 
 ## 인접 과목
 
