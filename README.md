@@ -32,9 +32,19 @@ llm-wiki/
 ├── 30-Projects/             ME × LLM 프로젝트
 ├── 40-Papers/               논문/자료 정리
 ├── 50-Daily/                Daily Notes (자동 생성)
-├── 90-Templates/            note · concept · project · paper · daily
+├── 60-Philosophy/           철학 — 동·서양 사상가 (사상·논증·논리·한계)
+│   ├── Western/             고대~현대 (소크라테스 … 비트겐슈타인)
+│   ├── Eastern/             중국·인도·한국 (공자 … 이황)
+│   └── Themes/              주제별 충돌 노트 (윤리·인식·형이상학 …)
+├── 90-Templates/            note · concept · project · paper · daily · philosopher
 └── 99-Attachments/          이미지·PDF 첨부
 ```
+
+## 🧠 철학 리퍼지터리 — "나만의 철학자"
+`60-Philosophy/`는 단순 백과사전이 아니라 **LLM을 철학적 대화 상대로 쓰기 위한** 섹션이다.
+- 시작점: [[Philosophy-MOC]] · 사용법: `60-Philosophy/_사용법 — 나만의 철학자.md`
+- 각 사상가 노트는 `한 줄 요약 → 핵심 사상 → 주요 논증(전제→결론) → 논리/방법론 → 한계·비판 → 활용 프롬프트` 구조.
+- 5가지 대화 모드: 소크라테스식 문답 · 다관점 패널 토론 · 스틸맨+해체 · 개인 딜레마에 프레임워크 적용 · 텍스트 독해 동행.
 
 ## 사용법
 
