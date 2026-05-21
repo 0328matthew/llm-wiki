@@ -12,7 +12,8 @@ llm-wiki/
 │   ├── Home.md
 │   ├── LLM-MOC.md
 │   ├── ME-MOC.md
-│   └── Math-MOC.md
+│   ├── Math-MOC.md
+│   └── CS-MOC.md
 ├── 10-LLM/                  LLM 학습 노트
 │   ├── Concepts/            트랜스포머·어텐션·RAG·임베딩 …
 │   ├── Prompting/           프롬프트 패턴, CoT, Structured Output
@@ -29,6 +30,9 @@ llm-wiki/
 ├── 25-Math/                 응용수학
 │   ├── NumericalAnalysis/   수치해석
 │   └── DifferentialEquations/ 미분방정식
+├── 35-CS/                   C++ 프로그래밍 (포르잔 기준)
+│   ├── Cpp-OOP/             객체지향 접근 (C++ 바이블) — 전 20장
+│   └── Cpp-Structured/      구조적 접근 — 핵심 13장
 ├── 30-Projects/             ME × LLM 프로젝트
 ├── 40-Papers/               논문/자료 정리
 ├── 50-Daily/                Daily Notes (자동 생성)
