@@ -1,14 +1,14 @@
 ---
-title: "SA Ch13 — 상속"
+title: "SA Ch14 — 상속"
 tags: [note, cs, cpp, structured, chapter]
 domain: CS
 subject: Cpp-Structured
-chapter: 13
+chapter: 14
 source: "Forouzan & Gilberg, *Computer Science: A Structured Approach Using C++*"
 created: 2026-05-21
 ---
 
-⬅︎ [[SA Ch12 클래스의 고급 기능]] · [[CS-MOC]]
+⬅︎ [[SA Ch13 클래스의 고급 기능]] · [[CS-MOC]]
 
 ## 한 줄 요약
 상속은 기존 클래스(기반)의 멤버를 새 클래스(파생)가 **물려받아 확장·재정의**하는 코드 재사용 메커니즘. **is-a 관계**를 표현하고, `virtual` 함수를 통해 다형성으로 이어지며, C++ 객체지향의 완성 단계.
@@ -117,10 +117,18 @@ class C : public A, public B { ... };
 - is-a가 아닌 관계(has-a)에 상속을 남용
 - 재정의 의도인데 시그니처가 달라 **함수 숨김**이 일어남(`override`로 검출)
 
+## 연습문제
+1. `Shape` 기반 클래스에 `virtual double area()`를 두고 `Circle`/`Rectangle`을 파생시켜, 기반 포인터 배열로 면적 합을 구하라.
+2. 기반·파생에 생성자/소멸자 출력문을 넣어 호출 순서(생성: 기반→파생, 소멸: 역순)를 확인하라.
+3. `protected` 멤버가 파생 클래스에서는 접근되고 외부에서는 막히는 것을 확인하라.
+> 힌트: 1번에서 다형성이 동작하려면 기반의 `area()`에 `virtual`이 있어야 한다.
+
+> 모던 C++: 재정의 함수에 `override`를 붙이면 시그니처 불일치로 인한 함수 숨김 버그를 컴파일러가 잡아 준다. → [[모던 C++ 보강 — C++11 이후]]
+
 ## 관련 개념
-- [[SA Ch11 클래스]] — 상속의 기반이 되는 클래스 개념
-- [[SA Ch12 클래스의 고급 기능]] — this/생성자 등 선행 지식
-- [[OOP Ch01 컴퓨터와 프로그래밍 언어]] — OOP 패러다임으로의 본격 진입
+- [[SA Ch12 클래스]] — 상속의 기반이 되는 클래스 개념
+- [[SA Ch13 클래스의 고급 기능]] — this/생성자 등 선행 지식
+- [[OOP Ch11 클래스 간의 관계]] · [[OOP Ch12 다형성과 그 밖의 이슈]] — 객체지향 트랙의 상속·다형성 심화
 
 ## 참고
 - Forouzan & Gilberg, *Structured Approach*, Ch. 13

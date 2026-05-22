@@ -106,9 +106,16 @@ int main() {
 - `unordered_map`에 순서를 기대
 - `sort`에 잘못된 비교자(strict weak ordering 위반) → 미정의 동작
 
+## 연습문제
+1. `vector<int>`에 값을 넣고 `sort` 후 `binary_search`로 특정 값을 찾아라.
+2. `map<string,int>`로 텍스트의 단어 빈도수를 세어 출력하라.
+3. `for_each`와 람다(또는 `accumulate`)로 원소들의 제곱합을 구하라.
+> 힌트: `binary_search`는 정렬된 범위에서만 올바르게 동작한다.
+
 ## 관련 개념
 - [[OOP Ch18 자료구조 입문]] — STL이 구현해 둔 ADT의 원리
 - [[OOP Ch20 디자인 패턴]] — 반복자(iterator)는 그 자체로 패턴
+- [[모던 C++ 보강 — C++11 이후]] — 람다·range-based for와 함께 쓰면 위력 배가
 
 ## 참고
 - Forouzan & Gilberg, *C++ Programming*, Ch. 19

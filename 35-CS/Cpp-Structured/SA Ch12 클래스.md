@@ -1,14 +1,14 @@
 ---
-title: "SA Ch11 — 클래스"
+title: "SA Ch12 — 클래스"
 tags: [note, cs, cpp, structured, chapter]
 domain: CS
 subject: Cpp-Structured
-chapter: 11
+chapter: 12
 source: "Forouzan & Gilberg, *Computer Science: A Structured Approach Using C++*"
 created: 2026-05-21
 ---
 
-⬅︎ [[SA Ch10 유도 자료형 — 열거형·구조체·공용체]] · [[CS-MOC]] · 다음 → [[SA Ch12 클래스의 고급 기능]]
+⬅︎ [[SA Ch11 유도 자료형 — 열거형·구조체·공용체]] · [[CS-MOC]] · 다음 → [[SA Ch13 클래스의 고급 기능]]
 
 ## 한 줄 요약
 구조체가 **데이터만** 묶었다면, 클래스는 거기에 **함수(동작)와 접근 제어**를 더해 추상 자료형(ADT)을 구현한다. 데이터와 그것을 다루는 연산을 한 단위로 캡슐화하면서, 절차적 사고에서 객체지향으로 넘어가는 전환점.
@@ -97,10 +97,17 @@ double Circle::area() {
 - 모든 멤버를 `public`으로 두어 정보 은닉이 무너짐
 - 멤버 변수를 생성자에서 초기화하지 않아 쓰레기 값 사용
 
+## 연습문제
+1. 배열 멤버를 가진 `Stack` 클래스(`push`/`pop`/`isEmpty`)를 구현하라.
+2. private 잔액을 가진 `Account` 클래스에 `deposit`/`withdraw`를 두되, 음수·잔액 초과를 막아라.
+3. 기본 생성자와 매개변수 생성자를 오버로딩해 두 방식으로 객체를 생성하라.
+> 힌트: 2번은 `withdraw`에서 출금액이 잔액보다 크면 거부한다.
+
 ## 관련 개념
-- [[SA Ch10 유도 자료형 — 열거형·구조체·공용체]] — struct가 class의 전신
-- [[SA Ch12 클래스의 고급 기능]] — static, friend, 연산자 오버로딩
-- [[SA Ch13 상속]] — 클래스 간 is-a 관계
+- [[SA Ch11 유도 자료형 — 열거형·구조체·공용체]] — struct가 class의 전신
+- [[SA Ch13 클래스의 고급 기능]] — static, friend, 연산자 오버로딩
+- [[SA Ch14 상속]] — 클래스 간 is-a 관계
+- [[OOP Ch07 사용자 정의 자료형 — 클래스]] — 객체지향 트랙의 클래스 설명
 
 ## 참고
 - Forouzan & Gilberg, *Structured Approach*, Ch. 11
