@@ -1,14 +1,14 @@
 ---
-title: "SA Ch10 — 유도 자료형: 열거형·구조체·공용체"
+title: "SA Ch11 — 유도 자료형: 열거형·구조체·공용체"
 tags: [note, cs, cpp, structured, chapter]
 domain: CS
 subject: Cpp-Structured
-chapter: 10
+chapter: 11
 source: "Forouzan & Gilberg, *Computer Science: A Structured Approach Using C++*"
 created: 2026-05-21
 ---
 
-⬅︎ [[SA Ch09 포인터]] · [[CS-MOC]] · 다음 → [[SA Ch11 클래스]]
+⬅︎ [[SA Ch10 문자열]] · [[CS-MOC]] · 다음 → [[SA Ch12 클래스]]
 
 ## 한 줄 요약
 기본 자료형을 조합해 **사용자 정의 타입**을 만드는 절차적 도구들. enum으로 의미 있는 상수를, struct로 서로 다른 자료를 하나로 묶고, 이 묶음 사고가 다음 장 **클래스**의 직접적인 디딤돌이 된다.
@@ -115,9 +115,16 @@ typedef struct Student Student;     // C 호환 패턴
 - union의 한 멤버를 쓰고 다른 멤버를 읽음(미정의)
 - 큰 구조체를 값 전달해 불필요한 복사 비용 발생
 
+## 연습문제
+1. 학생(이름·학번·평점) `struct` 배열을 만들어 평점 내림차순으로 정렬하라.
+2. 요일을 `enum`으로 정의하고 다음 요일을 반환하는 함수를 작성하라.
+3. `int`·`double`·`char`를 담는 `union`의 크기가 가장 큰 멤버 기준임을 `sizeof`로 확인하라.
+> 힌트: 1번은 Ch08의 정렬 알고리즘을 struct 멤버 기준 비교로 바꾸면 된다.
+
 ## 관련 개념
-- [[SA Ch11 클래스]] — struct에 함수와 접근 제어를 더하면 class
+- [[SA Ch12 클래스]] — struct에 함수와 접근 제어를 더하면 class
 - [[SA Ch09 포인터]] — `->` 연산자의 토대
+- [[OOP Ch07 사용자 정의 자료형 — 클래스]] — 객체지향 트랙의 같은 주제(클래스로 직행)
 
 ## 참고
 - Forouzan & Gilberg, *Structured Approach*, Ch. 10

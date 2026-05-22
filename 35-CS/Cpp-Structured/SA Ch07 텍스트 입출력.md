@@ -111,10 +111,17 @@ fout.close();
 - 스트림 오류 후 상태를 `clear()`하지 않고 계속 읽으려 함
 - `ofstream`이 기존 파일을 덮어쓰는 줄 모르고 데이터 분실
 
+## 연습문제
+1. 텍스트 파일을 열어 줄 수와 문자 수를 세어 출력하라.
+2. 두 실수와 연산자를 입력받아 결과를 `setw`/`setprecision`으로 정렬해 출력하라.
+3. 파일에서 정수들을 EOF까지 읽어 평균을 구하라(`while (fin >> x)`).
+> 힌트: 3번에서 `fin >> x`가 실패하면 루프가 자동 종료된다.
+
 ## 관련 개념
 - [[SA Ch02 C++ 언어 입문]] — cin/cout 기본
 - [[SA Ch06 반복]] — EOF 제어 반복
 - [[SA Ch08 배열]] — 파일에서 읽은 데이터를 저장
+- [[OOP Ch16 입출력 스트림]] — 객체지향 트랙의 같은 주제
 
 ## 참고
 - Forouzan & Gilberg, *Computer Science: A Structured Approach Using C++*, Ch. 7
