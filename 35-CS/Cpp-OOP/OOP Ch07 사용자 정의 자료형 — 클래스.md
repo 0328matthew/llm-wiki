@@ -112,9 +112,17 @@ double Circle::area() const { return 3.14159 * radius * radius; }
 - `const` 멤버 함수 안에서 멤버를 수정하려 함.
 - 헤더에서 인클루드 가드 누락 → 다중 정의 링커 오류.
 
+## 연습문제
+1. `width`, `height`(private)와 `area()`, 매개변수 생성자를 가진 `Rectangle` 클래스를 작성하라.
+2. 위 클래스에 getter/setter를 추가하되 setter에서 음수 입력을 거부하는 유효성 검사를 넣어라.
+3. 생성자와 소멸자에 출력문을 넣고, 객체를 블록 안/밖에서 만들어 호출 시점(수명)을 관찰하라.
+> 힌트: 3번은 지역 객체가 스코프를 벗어날 때 소멸자가 자동 호출됨을 보여준다.
+
 ## 관련 개념
 - [[OOP Ch06 함수]] — 멤버 함수도 함수, 매개변수 전달 규칙 동일
 - [[OOP Ch08 배열]] — 객체를 배열로 모아 관리
+- [[SA Ch12 클래스]] — 구조적 접근 트랙의 같은 주제(struct→class)
+- [[모던 C++ 보강 — C++11 이후]] — 자원을 멤버로 두면 Rule of Zero로 복사/소멸을 자동화
 
 ## 참고
 - Forouzan & Gilberg, *C++ Programming*, Ch. 7

@@ -1,14 +1,14 @@
 ---
-title: "SA Ch12 — 클래스의 고급 기능"
+title: "SA Ch13 — 클래스의 고급 기능"
 tags: [note, cs, cpp, structured, chapter]
 domain: CS
 subject: Cpp-Structured
-chapter: 12
+chapter: 13
 source: "Forouzan & Gilberg, *Computer Science: A Structured Approach Using C++*"
 created: 2026-05-21
 ---
 
-⬅︎ [[SA Ch11 클래스]] · [[CS-MOC]] · 다음 → [[SA Ch13 상속]]
+⬅︎ [[SA Ch12 클래스]] · [[CS-MOC]] · 다음 → [[SA Ch14 상속]]
 
 ## 한 줄 요약
 기본 클래스를 실전에서 쓰게 해주는 도구들: 인스턴스 공통 데이터(`static`), 접근 권한 부여(`friend`), 자기 자신 참조(`this`), 연산자 오버로딩, 그리고 포인터 멤버를 안전하게 다루는 **깊은 복사**와 `const` 정확성.
@@ -118,10 +118,19 @@ delete[] pa;                  // 각 원소 소멸자 호출
 - `this`를 static 멤버 함수에서 사용 (static엔 this 없음)
 - 연산자 오버로딩 반환형/`const`를 빠뜨려 임시 객체 수정 시도
 
+## 연습문제
+1. 생성된 객체 수를 세는 `static` 카운터를 클래스에 추가하라.
+2. 포인터 멤버를 가진 클래스에 깊은 복사 생성자를 작성하고, 얕은 복사와의 차이(이중 해제)를 설명하라.
+3. `const` 멤버 함수를 만들고 `const` 객체로 호출해 비-const 함수는 호출되지 않음을 확인하라.
+> 힌트: 1번의 static 멤버 변수는 클래스 외부에서 한 번 정의·초기화해야 한다.
+
+> 모던 C++: 포인터 멤버를 직접 다루는 대신 멤버를 스마트 포인터/컨테이너로 두면 복사·이동·소멸을 자동화(Rule of Zero)할 수 있다. → [[모던 C++ 보강 — C++11 이후]]
+
 ## 관련 개념
-- [[SA Ch11 클래스]] — 기본 클래스 문법
+- [[SA Ch12 클래스]] — 기본 클래스 문법
 - [[SA Ch09 포인터]] — 깊은 복사가 필요한 근본 이유
-- [[SA Ch13 상속]] — 클래스 재사용의 다음 단계
+- [[SA Ch14 상속]] — 클래스 재사용의 다음 단계
+- [[OOP Ch13 연산자 오버로딩]] — 객체지향 트랙의 연산자 오버로딩 심화
 
 ## 참고
 - Forouzan & Gilberg, *Structured Approach*, Ch. 12

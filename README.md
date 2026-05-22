@@ -32,7 +32,8 @@ llm-wiki/
 │   └── DifferentialEquations/ 미분방정식
 ├── 35-CS/                   C++ 프로그래밍 (포르잔 기준)
 │   ├── Cpp-OOP/             객체지향 접근 (C++ 바이블) — 전 20장
-│   └── Cpp-Structured/      구조적 접근 — 핵심 13장
+│   ├── Cpp-Structured/      구조적 접근 — 핵심 14장
+│   └── 모던 C++ 보강.md      C++11 이후 (스마트 포인터·RAII·이동·람다)
 ├── 30-Projects/             ME × LLM 프로젝트
 ├── 40-Papers/               논문/자료 정리
 ├── 50-Daily/                Daily Notes (자동 생성)
