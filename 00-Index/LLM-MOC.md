@@ -42,6 +42,7 @@ tags: [moc, llm]
 - [[LangChain vs LlamaIndex]]
 - [[Vector DB]] — pgvector, Chroma, Qdrant 등
 - [[Prompt Caching]]
+- [[PPT 제작 워크플로우]] — 대본→LLM이 구성/디자인 설계하는 발표자료 워크플로우
 
 ## 외부 자료 (Inbox)
 - Anthropic Docs — https://docs.anthropic.com
