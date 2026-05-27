@@ -1,15 +1,9 @@
-# --- Obsidian UI state (변경이 잦고 git 관리 불필요) ---
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/workspace.json.bak
+# --- Obsidian 설정 전체 (기기마다 자동 생성/상이 → clone 충돌 방지) ---
+# 설정/플러그인은 기기별로 따로 관리하고, git은 노트만 동기화
+.obsidian/
 
-# --- Obsidian plugin data (개인 캐시/세팅) ---
-.obsidian/plugins/*/data.json
-.obsidian/cache/
-
-# --- Obsidian 트래시/리비전 (vault 내부 휴지통) ---
+# --- 트래시/리비전 (vault 내부 휴지통) ---
 .trash/
-.obsidian/trash/
 
 # --- OS / 편집기 ---
 .DS_Store
