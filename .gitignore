@@ -22,3 +22,7 @@ desktop.ini
 # (필요 시 활성화)
 # 99-Attachments/*.pdf
 # 99-Attachments/*.mp4
+
+# --- 발표자료 대용량 바이너리 (모바일 sync 가볍게 유지) ---
+*.pptx
+30-Projects/Presentations/**/images/
