@@ -18,11 +18,23 @@ tags:
 
 > **Chapra의 *Applied Numerical Methods with MATLAB*** 기반 강의 노트.
 > 부산대학교 기계공학부 2학년 1학기 수치해석 과목 (2026 봄).
+> 강의자: 이현철 교수 (hyunchul.lee@pusan.ac.kr). 교재: Chapra, 4th/5th Ed., McGraw-Hill.
+
+## 수치해석이란?
+
+> *"Numerical analysis is the study of algorithms that use **numerical approximation** for the problems of mathematical analysis."* — Wikipedia
+
+가장 오래된 사례: **바빌로니아 점토판** — $\sqrt{2} \approx 1.41421296$ (정밀치 $1.41421356\ldots$).
+
+### 공학 문제 해결의 일반 흐름
+1. **수학적 모델링** — 지배방정식 수립 (예: 낙하 운동 $\dfrac{dv}{dt} = g - \dfrac{c_d}{m}v^2$)
+2. **수치 방법론의 이해** — 수렴성과 오차 한계
+3. **수치 해석 수행** — MATLAB / C / Fortran 등으로 프로그래밍 후 계산
+4. **결과 분석** — 물리 현상에 대한 통찰
 
 ## 목차
 
 ### Part 1 — Modeling, Computers, Error Analysis
-- [[00 Syllabus]] — 강의계획서, 평가, 일정
 - [[Ch01 수학적 모델링과 수치해석]] — 번지점프 ODE, Euler 입문, 보존법칙
 - [[Ch04 오차 분석과 반올림]] — Roundoff vs Truncation, Taylor 급수, 유한차분
 - [[Ch04 예제 — 오차 분석]] — Ex 4.3 ($\cos \pi/3$), Ex 4.4 (FD 비교)
@@ -87,12 +99,40 @@ tags:
 | 미분 | `diff`, `gradient` |
 | ODE | `ode45`, `ode23s` (stiff), `bvp4c` |
 
-## 평가 비중 (시험 대비)
+## 강의 일정 (15주차)
 
-- 중간고사 30% (Ch01~Ch15)
-- 기말고사 40% (Ch17~Ch24)
-- 과제 20% — MATLAB 구현 위주
-- 출석 10%
+| 주차 | 주제 | 과제 |
+| --- | --- | --- |
+| 1 | Math. Modeling, Num. Methods, and Prob. Solving | — |
+| 2 | Errors, Programming with MATLAB | Programming with MATLAB |
+| 3 | Roots: Bracketing Methods, Open Methods | Solving an Equation |
+| 4 | Optimization | — |
+| 5 | Gaussian Elimination, LU Factorization | Solving SLE with Direct Methods |
+| 6 | Matrix Inversion and Condition | — |
+| 7 | Iterative Methods | Solving SLE with Iterative Methods |
+| 8 | **중간고사** | — |
+| 9 | Curve Fitting: Linear Regression | — |
+| 10 | Curve Fitting: Polynomial Regression | Interpolation |
+| 11 | Curve Fitting: Splines and Interpolation | — |
+| 12 | Numerical Integration and Differentiation | Numerical Diff./Integ. |
+| 13 | ODE: Initial-Value Problems | — |
+| 14 | Adaptive Methods and Stiff Systems | Initial Value Problem |
+| 15 | **기말고사** | — |
+
+## 평가 비중
+
+| 항목 | 비중 | 범위 |
+| --- | --- | --- |
+| 중간고사 | 30% | Ch01~Ch15 |
+| 기말고사 | 40% | Ch17~Ch24 |
+| 과제 (Homework) | 20% | MATLAB 구현 위주 |
+| 출석 | 10% | — |
+
+## 응용 예시
+- 자동차 / 항공기 구조해석 (FEM)
+- F1 머신 외부유동 (CFD)
+- 핵연료 집합체 해석
+- 반도체 / 광학 시뮬레이션
 
 ## 참고
 - 관련 수학: [[Differential Equations]]
