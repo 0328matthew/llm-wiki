@@ -58,12 +58,15 @@ tags:
 
 ## 본 강의의 6대 주제
 
-1. **Part 1** — Modeling, Computers, and Error Analysis → [[Ch01 수학적 모델링]], [[Ch04 오차 분석과 반올림]]
-2. **Part 2** — Roots of Equations → [[Ch05 Bracketing Methods]], [[Ch06 Open Methods]]
-3. **Part 3** — Linear Algebraic Equations → [[Ch08 선형방정식과 행렬]], [[Ch09 Gauss Elimination]], [[Ch10 LU Factorization]], [[Ch11 Matrix Inverse and Condition]], [[Ch12 Iterative Methods]]
-4. **Part 4** — Curve Fitting & Interpolation → [[Ch13 Linear Regression]], [[Ch14 General Linear Least Squares]], [[Ch15 Polynomial Interpolation]], [[Ch17 Splines]]
-5. **Part 5** — Numerical Integration & Differentiation → [[Ch18 Newton-Cotes]], [[Ch19-1 Gauss Quadrature]], [[Ch20-1 Numerical Differentiation]]
-6. **Part 6** — Ordinary Differential Equations → [[Ch21 Runge-Kutta Methods]], [[Ch22-1 Adaptive Methods]], [[Ch24-1 Boundary Value Problems]]
+1. **Part 1** — Modeling, Computers, and Error Analysis → [[Ch01 수학적 모델링과 수치해석]], [[Ch04 오차 분석과 반올림]]
+2. **Part 2** — Roots of Equations & Optimization → [[Ch05 Bracketing Methods]], [[Ch06 Open Methods]], [[Ch07 Optimization]]
+3. **Part 3** — Linear Algebraic Equations → [[Ch08 선형방정식과 행렬]], [[Ch09 Gauss Elimination]], [[Ch10 LU Factorization]], [[Ch11 Matrix Inverse and Condition]], [[Ch12 Iterative Methods]], [[Ch13 Eigenvalues]]
+4. **Part 4** — Curve Fitting & Interpolation → [[Ch14 Curve Fitting — Linear Regression]], [[Ch15 General Linear LS와 Nonlinear Regression]], [[Ch17 Polynomial Interpolation]], [[Ch18 Splines와 Piecewise Interpolation]]
+5. **Part 5** — Numerical Integration & Differentiation → [[Ch19 Numerical Integration — Trapezoidal Simpson]], [[Ch19 Numerical Integration — Advanced]], [[Ch20-1 Romberg Integration]], [[Ch20-2 Gauss Quadrature]], [[Ch21 Numerical Differentiation]]
+6. **Part 6** — Ordinary Differential Equations → [[Ch22 Initial Value Problems — Euler Heun RK]], [[Ch24 Boundary Value Problems]]
+
+## 인덱스 허브
+- [[Numerical Analysis]] — 전체 강의 인덱스 (Map of Content)
 
 ## 응용 예시
 - 자동차 / 항공기 구조해석 (FEM)
