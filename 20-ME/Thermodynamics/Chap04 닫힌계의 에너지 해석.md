@@ -8,7 +8,7 @@ source: "Cengel & Boles, *Thermodynamics: An Engineering Approach*, 10e — Prof
 created: 2026-05-19
 ---
 
-⬅︎ [[Chap03 순물질의 상태량]] · [[ME-MOC]] · 다음 → [[Chap05 검사체적의 질량·에너지 해석]]
+⬅︎ [[Chap03 순물질의 상태량]] · [[Thermodynamics]] · 다음 → [[Chap05 검사체적의 질량·에너지 해석]]
 
 ## 한 줄 요약
 경계가 움직이는 닫힌계에 1법칙을 적용해 **boundary work**와 **에너지 평형**을 푸는 챕터. 비열 $c_v, c_p$ 의 의미와 이상기체·고체·액체 근사가 핵심.

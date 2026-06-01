@@ -8,7 +8,7 @@ source: "Cengel & Boles, *Thermodynamics: An Engineering Approach*, 10e — Prof
 created: 2026-05-19
 ---
 
-⬅︎ [[ME-MOC]] · 다음 → [[Chap02 에너지와 에너지 전달]]
+⬅︎ [[Thermodynamics]] · 다음 → [[Chap02 에너지와 에너지 전달]]
 
 ## 한 줄 요약
 열역학의 언어(계·상태·과정·평형)와 단위·온도·압력을 정의하고, 이후 모든 분석의 출발점을 깐다.

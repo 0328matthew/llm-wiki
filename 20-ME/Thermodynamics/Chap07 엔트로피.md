@@ -8,7 +8,7 @@ source: "Cengel & Boles, *Thermodynamics: An Engineering Approach*, 10e — Prof
 created: 2026-05-19
 ---
 
-⬅︎ [[Chap06 열역학 제2법칙]] · [[ME-MOC]] · 다음 → [[Chap08 엔트로피 해석]]
+⬅︎ [[Chap06 열역학 제2법칙]] · [[Thermodynamics]] · 다음 → [[Chap08 엔트로피 해석]]
 
 ## 한 줄 요약
 2법칙을 **상태량**으로 정량화한 것이 **엔트로피 $S$**. 자연 과정 방향성을 식으로: $\Delta S_\text{universe} \ge 0$.

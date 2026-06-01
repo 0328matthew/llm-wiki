@@ -8,7 +8,7 @@ source: "Cengel & Boles, *Thermodynamics: An Engineering Approach*, 10e — Prof
 created: 2026-05-19
 ---
 
-⬅︎ [[Chap07 엔트로피]] · [[ME-MOC]] · 다음 → (Ch. 9 — 가스파워사이클로)
+⬅︎ [[Chap07 엔트로피]] · [[Thermodynamics]] · 다음 → (Ch. 9 — 가스파워사이클로)
 
 ## 한 줄 요약
 엔트로피를 **공학 장치 해석**에 사용. 가역 정상유동 일의 표현, 등엔트로피 효율, 닫힌계·CV 엔트로피 평형까지.

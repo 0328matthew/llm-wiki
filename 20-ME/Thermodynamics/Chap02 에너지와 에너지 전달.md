@@ -8,7 +8,7 @@ source: "Cengel & Boles, *Thermodynamics: An Engineering Approach*, 10e — Prof
 created: 2026-05-19
 ---
 
-⬅︎ [[Chap01 서론과 기본 개념]] · [[ME-MOC]] · 다음 → [[Chap03 순물질의 상태량]]
+⬅︎ [[Chap01 서론과 기본 개념]] · [[Thermodynamics]] · 다음 → [[Chap03 순물질의 상태량]]
 
 ## 한 줄 요약
 에너지의 **형태**와 그 **전달 메커니즘**(열·일)을 정리하고, 에너지 보존 = 제1법칙을 식으로 쓴다.

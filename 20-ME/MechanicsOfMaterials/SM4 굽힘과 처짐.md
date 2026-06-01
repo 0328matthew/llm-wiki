@@ -8,7 +8,7 @@ source: "이태경 교수 강의 (PNU 기계공학부)"
 created: 2026-05-19
 ---
 
-⬅︎ [[SM3 비틀림]] · [[ME-MOC]]
+⬅︎ [[SM3 비틀림]] · [[Mechanics of Materials]]
 
 ## 한 줄 요약
 보(beam)의 분석 풀 흐름: **SFD·BMD → flexure formula(굽힘응력) → shear formula(전단응력) → deflection(처짐)**. 마지막은 $EI y'' = M(x)$의 적분 문제로 귀결.

@@ -8,7 +8,7 @@ source: "Cengel & Boles, *Thermodynamics: An Engineering Approach*, 10e — Prof
 created: 2026-05-19
 ---
 
-⬅︎ [[Chap04 닫힌계의 에너지 해석]] · [[ME-MOC]] · 다음 → [[Chap06 열역학 제2법칙]]
+⬅︎ [[Chap04 닫힌계의 에너지 해석]] · [[Thermodynamics]] · 다음 → [[Chap06 열역학 제2법칙]]
 
 ## 한 줄 요약
 질량이 경계를 넘는 **열린계(CV)** 에 질량 보존 + 1법칙을 적용. 정상유동(steady-flow)과 비정상유동(unsteady-flow) 두 경우로 나눠 푼다.

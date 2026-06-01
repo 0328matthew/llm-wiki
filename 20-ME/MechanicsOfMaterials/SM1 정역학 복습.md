@@ -8,7 +8,7 @@ source: "이태경 교수 (PNU 기계공학부, 금속설계연구실) Solid Mec
 created: 2026-05-19
 ---
 
-⬅︎ [[ME-MOC]] · 다음 → [[SM2 축 하중]]
+⬅︎ [[Mechanics of Materials]] · 다음 → [[SM2 축 하중]]
 
 ## 한 줄 요약
 고체역학은 **변형(deformation)** 을 다루지만 출발점은 정역학의 **평형(equilibrium)**. FBD를 그리고 $\sum F = 0, \sum M = 0$을 풀어 반력·내력을 구하는 것이 모든 분석의 1단계.

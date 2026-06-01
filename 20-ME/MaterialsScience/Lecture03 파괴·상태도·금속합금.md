@@ -7,7 +7,7 @@ lecture: 3
 created: 2026-05-19
 ---
 
-⬅︎ [[Lecture02 확산과 기계적 성질]] · [[ME-MOC]]
+⬅︎ [[Lecture02 확산과 기계적 성질]] · [[Materials Science]]
 
 ## 한 줄 요약
 재료가 어떻게 **부서지는가**(fracture/fatigue/creep) → 합금이 어떻게 **상으로 나뉘는가**(phase diagrams) → 실제 **금속재료와 열처리**.

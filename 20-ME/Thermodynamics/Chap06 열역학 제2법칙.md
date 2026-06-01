@@ -8,7 +8,7 @@ source: "Cengel & Boles, *Thermodynamics: An Engineering Approach*, 10e — Prof
 created: 2026-05-19
 ---
 
-⬅︎ [[Chap05 검사체적의 질량·에너지 해석]] · [[ME-MOC]] · 다음 → [[Chap07 엔트로피]]
+⬅︎ [[Chap05 검사체적의 질량·에너지 해석]] · [[Thermodynamics]] · 다음 → [[Chap07 엔트로피]]
 
 ## 한 줄 요약
 1법칙은 **양**, 2법칙은 에너지의 **질과 방향**. 열기관·냉동기의 효율 한계를 **Carnot**으로 정량화.

@@ -8,7 +8,7 @@ source: "Cengel & Boles, *Thermodynamics: An Engineering Approach*, 10e — Prof
 created: 2026-05-19
 ---
 
-⬅︎ [[Chap02 에너지와 에너지 전달]] · [[ME-MOC]] · 다음 → [[Chap04 닫힌계의 에너지 해석]]
+⬅︎ [[Chap02 에너지와 에너지 전달]] · [[Thermodynamics]] · 다음 → [[Chap04 닫힌계의 에너지 해석]]
 
 ## 한 줄 요약
 물·냉매 같은 **순물질**의 상태량을 P–v, T–v, P–T 다이어그램과 **증기표 / 이상기체 식**으로 다룰 수 있게 만든다.
