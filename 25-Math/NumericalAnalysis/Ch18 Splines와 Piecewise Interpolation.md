@@ -130,6 +130,6 @@ yi = interp1(x, y, xi, 'pchip')    % piecewise cubic Hermite (smoother shape)
 
 ---
 
-← [[Ch17 Polynomial Interpolation]] | → [[Ch19 Numerical Integration]]
+← [[Ch17 Polynomial Interpolation]] | ↑ [[Numerical Analysis]] | → [[Ch19 Numerical Integration — Trapezoidal Simpson]]
 
 #numerical-analysis #ch18 #spline #cubic-spline

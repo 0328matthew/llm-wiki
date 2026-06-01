@@ -211,6 +211,6 @@ plot(x, fx, 'o', xa, ya)
 
 ---
 
-← [[Ch20-2 Gauss Quadrature]] | → [[Ch22 Initial Value Problems — Euler]]
+← [[Ch20-2 Gauss Quadrature]] | ↑ [[Numerical Analysis]] | → [[Ch22 Initial Value Problems — Euler Heun RK]]
 
 #numerical-analysis #ch21 #numerical-differentiation #finite-difference

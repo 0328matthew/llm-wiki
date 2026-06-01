@@ -13,6 +13,8 @@ tags:
 
 # 미분방정식 (Differential Equations)
 
+⬅︎ [[Math-MOC]]
+
 > **Zill, *A First Course in Differential Equations*** 기반 강의 노트.
 > 부산대학교 기계공학부 · 양민진 교수.
 

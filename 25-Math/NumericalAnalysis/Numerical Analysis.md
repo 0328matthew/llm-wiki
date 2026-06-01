@@ -14,6 +14,8 @@ tags:
 
 # 수치해석 (Numerical Analysis) — 2026
 
+⬅︎ [[Math-MOC]]
+
 > **Chapra의 *Applied Numerical Methods with MATLAB*** 기반 강의 노트.
 > 부산대학교 기계공학부 2학년 1학기 수치해석 과목 (2026 봄).
 
@@ -93,8 +95,8 @@ tags:
 - 출석 10%
 
 ## 참고
-- 사용자 프로필: [[user_profile]]
-- 관련 수학: [[../DifferentialEquations]] (있다면)
+- 관련 수학: [[Differential Equations]]
+- 상위 인덱스: [[Math-MOC]]
 - 외부 자료:
   - Chapra textbook companion site (MATLAB M-files)
   - [MIT 18.085 Computational Science and Engineering](https://ocw.mit.edu/courses/18-085-computational-science-and-engineering-i-fall-2008/)

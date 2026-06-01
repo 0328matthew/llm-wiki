@@ -154,10 +154,10 @@ $f(x)$ 적분 ($a=0, b=0.8$, 5 segments, $h=0.16$):
 | Simpson 1/3 | 3 | 3차 | $O(h^4)$ composite | $n$ 짝수 |
 | Simpson 3/8 | 4 | 3차 | $O(h^4)$ composite | $n$이 3의 배수 |
 
-다음: [[Ch19-2 Gauss Quadrature와 Romberg|Gauss Quadrature / Romberg Integration]] (Ch19-2, Ch19-3)
+다음: [[Ch19 Numerical Integration — Advanced|고차 NC / Multiple Integrals]] → [[Ch20-1 Romberg Integration|Romberg]] → [[Ch20-2 Gauss Quadrature|Gauss Quadrature]]
 
 ---
 
-← [[Ch18 Splines와 Piecewise Interpolation]] | → [[Ch19-2 Gauss Quadrature와 Romberg]]
+← [[Ch18 Splines와 Piecewise Interpolation]] | ↑ [[Numerical Analysis]] | → [[Ch19 Numerical Integration — Advanced]]
 
 #numerical-analysis #ch19 #numerical-integration #simpson-rule

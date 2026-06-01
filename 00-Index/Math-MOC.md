@@ -9,16 +9,16 @@ tags: [moc, math]
 
 ⬅︎ 돌아가기: [[Home]]
 
-## Numerical Analysis — 수치해석
-> 위치: `25-Math/NumericalAnalysis/`
-- [[부동소수점과 오차]] — 절단오차 / 반올림오차
-- [[비선형 방정식 풀이]] — Bisection, Newton-Raphson, Secant
-- [[선형계 풀이]] — Gauss 소거, LU 분해, 반복법
-- [[보간법과 곡선 적합]] — Lagrange, Spline, 최소제곱
-- [[수치적분]] — 사다리꼴, Simpson, Gauss quadrature
-- [[ODE 수치해법]] — Euler, RK4
+## Numerical Analysis — 수치해석 → [[Numerical Analysis]]
+> 위치: `25-Math/NumericalAnalysis/` · Chapra 교재 기반, 이현철 교수 강의 (PNU)
+- [[Ch04 오차 분석과 반올림|부동소수점과 오차]] — 절단오차 / 반올림오차
+- [[Ch05 Bracketing Methods|비선형 방정식 풀이]] — Bisection, Newton-Raphson, Secant ([[Ch06 Open Methods|Open Methods]])
+- [[Ch09 Gauss Elimination|선형계 풀이]] — Gauss 소거, LU 분해 ([[Ch10 LU Factorization|LU]]), 반복법 ([[Ch12 Iterative Methods|Iterative]])
+- [[Ch17 Polynomial Interpolation|보간법과 곡선 적합]] — Lagrange, Spline ([[Ch18 Splines와 Piecewise Interpolation|Spline]]), 최소제곱 ([[Ch14 Curve Fitting — Linear Regression|LS]])
+- [[Ch19 Numerical Integration — Trapezoidal Simpson|수치적분]] — 사다리꼴, Simpson, Gauss quadrature ([[Ch20-2 Gauss Quadrature|Gauss]])
+- [[Ch22 Initial Value Problems — Euler Heun RK|ODE 수치해법]] — Euler, RK4, BVP ([[Ch24 Boundary Value Problems|BVP]])
 
-## Differential Equations — 미분방정식
+## Differential Equations — 미분방정식 → [[Differential Equations]]
 > 위치: `25-Math/DifferentialEquations/` · Zill 교재 기반, 양민진 교수 강의 (PNU)
 - [[Ch1 미분방정식 입문]] — 분류·해·IVP
 - [[Ch2 1계 미분방정식 풀이법]] — 분리·선형·완전·치환·Euler

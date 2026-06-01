@@ -94,6 +94,6 @@ $\int_0^6 \approx 6 \times \frac{256 + 2(496) + 448}{4} = 2688$
 
 ---
 
-← [[Ch19 Numerical Integration — Trapezoidal Simpson]] | → [[Ch19-2 Gauss Quadrature와 Romberg]]
+← [[Ch19 Numerical Integration — Trapezoidal Simpson]] | ↑ [[Numerical Analysis]] | → [[Ch20-1 Romberg Integration]]
 
 #numerical-analysis #ch19 #numerical-integration #multiple-integrals
