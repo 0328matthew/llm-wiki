@@ -7,7 +7,7 @@ source: "OSDev Wiki — Boot Sector, BIOS interrupt 0x10"
 created: 2026-05-27
 ---
 
-⬅︎ [[OS 만들기 01 — 개발 환경 구축]] · [[CS-MOC]] · 다음 → (예정) [[OS 만들기 03 — Bare Bones C 커널]]
+⬅︎ [[OS 만들기 01 — 개발 환경 구축]] · [[CS-MOC]] · 다음 → [[OS 만들기 03 — 글자·문자열 출력 (BIOS 텔레타이프)]]
 
 ## 한 줄 요약
 크로스 컴파일러 없이 **NASM만으로 512바이트 부트섹터**를 만들어, BIOS 텔레타이프(`int 0x10`)로 화면에 "Hello, my OS!"를 찍고 QEMU로 부팅 확인. OS 개발 환경이 끝부터 끝까지(편집→어셈블→부팅→화면출력) 도는지 검증하는 첫 성공.

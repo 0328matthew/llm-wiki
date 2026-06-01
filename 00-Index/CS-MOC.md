@@ -83,6 +83,7 @@ tags: [moc, cs, cpp]
 - [[OS 만들기 00 — 저수준 기초 개념]] — 메모리·포인터·CPU 부팅 과정·어셈블리 기초
 - [[OS 만들기 01 — 개발 환경 구축]] — WSL2·QEMU·크로스 컴파일러(i686-elf-gcc) 셋업
 - [[OS 만들기 02 — 첫 부팅 (부트섹터 Hello World)]] — NASM 512B 부트섹터·int 0x10·QEMU 부팅 ✅
+- [[OS 만들기 03 — 글자·문자열 출력 (BIOS 텔레타이프)]] — mov/int·AH/AL·db·lodsb 루프 (C/C++ 비유)
 
 ---
 
