@@ -222,6 +222,6 @@ $\sigma' = 2.7 \times 10^{-9}\,\text{K}^{-3}\text{m}^{-2}$ 추가.
 
 ---
 
-← [[Ch22 Initial Value Problems — Euler Heun RK]] | → [[00 Syllabus|과목 종합]]
+← [[Ch22 Initial Value Problems — Euler Heun RK]] | ↑ [[Numerical Analysis|과목 종합]]
 
 #numerical-analysis #ch24 #boundary-value-problem #shooting-method #finite-difference
