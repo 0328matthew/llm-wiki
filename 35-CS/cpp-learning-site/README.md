@@ -7,6 +7,13 @@
 
 브라우저로 `index.html` 을 열면 끝.
 
+### 바탕화면용 단일 파일
+
+`cpp-learning-site.html` 은 HTML·CSS·JS·강의·퀴즈를 **한 파일에 모두 인라인**한 버전이다.
+다운로드해서 바탕화면 등 아무 곳에나 두고 더블클릭하면 인터넷 없이 바로 열린다.
+(분리된 소스 `index.html` + `css/` + `js/` 를 수정한 뒤에는 단일 파일도 다시 만들어야 한다 —
+세 JS 파일과 CSS 를 index.html 의 `<link>`·`<script>` 자리에 인라인하면 된다.)
+
 ```bash
 # 로컬 서버로 열고 싶다면 (선택)
 cd 35-CS/cpp-learning-site
