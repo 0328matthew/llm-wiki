@@ -65,16 +65,20 @@
   }
 
   /* ---------- 코드 블록 렌더 ---------- */
-  function renderCode(code, note) {
+  function renderCode(code, note, lang) {
+    lang = lang || "cpp";
     const noteHtml = note ? `<p class="code-note">${esc(note)}</p>` : "";
+    const isCpp = lang === "cpp";
+    const label = isCpp ? "C++" : "bash";
+    const inner = isCpp ? highlight(code) : esc(code);
     return `
       <div class="code-block">
         <div class="code-head">
           <span class="dot r"></span><span class="dot y"></span><span class="dot g"></span>
-          <span class="lang">C++</span>
+          <span class="lang">${label}</span>
           <button class="copy-btn" type="button">복사</button>
         </div>
-        <pre class="code"><code>${highlight(code)}</code></pre>
+        <pre class="code ${isCpp ? "" : "plain"}"><code>${inner}</code></pre>
       </div>
       ${noteHtml}`;
   }
@@ -109,7 +113,7 @@
       <h1>${esc(lesson.title)}</h1>
       <p class="summary">${esc(lesson.summary)}</p>
       ${lesson.body}
-      ${lesson.code ? renderCode(lesson.code, lesson.codeNote) : ""}
+      ${lesson.code ? renderCode(lesson.code, lesson.codeNote, lesson.lang) : ""}
       ${renderQuiz(lesson.quiz, lesson.id)}
     `;
     document.title = `${lesson.title} · C++ 학습 사이트`;

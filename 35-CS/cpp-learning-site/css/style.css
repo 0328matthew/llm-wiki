@@ -167,17 +167,28 @@ pre.mini { background: var(--bg-elev); border: 1px dashed var(--border);
 .copy-btn:hover { background: rgba(255,255,255,.24); }
 .copy-btn.copied { background: var(--green); }
 pre.code {
-  margin: 0; background: var(--bg-code); color: #e4e4f0;
-  padding: 16px 18px; overflow-x: auto; font-size: 13.5px; line-height: 1.6;
-  font-family: "JetBrains Mono", "Fira Code", Consolas, monospace;
+  margin: 0; background: var(--bg-code); color: #ececf6;
+  padding: 18px 20px; overflow-x: auto; font-size: 14.5px; line-height: 1.8;
+  font-family: "JetBrains Mono", "Fira Code", "D2Coding", Consolas, monospace;
+  tab-size: 4; -moz-tab-size: 4;
 }
+/* 코드 블록 안의 <code> 는 인라인 코드 스타일(연파랑 배경)을 물려받지 않게 초기화
+   (이게 없으면 각 줄마다 연파랑 띠가 생겨 코드가 잘 안 보인다) */
+pre.code code {
+  background: none; padding: 0; border-radius: 0;
+  color: inherit; font-size: inherit; font-family: inherit;
+}
+/* 코드 선택(드래그) 시에도 또렷하게 */
+pre.code::selection, pre.code *::selection { background: #3a5bd9; color: #fff; }
+/* 명령어(bash) 블록은 구문강조 없이 단색으로 깔끔하게 */
+pre.code.plain { color: #d7e0c4; white-space: pre; }
 .code-note { font-size: 13.5px; color: var(--text-dim); margin: -6px 0 0; padding: 0 2px; }
 .code-note::before { content: "💡 "; }
 
-/* 구문 강조 토큰 */
-.tok-key { color: #c792ea; } .tok-str { color: #c3e88d; }
-.tok-num { color: #f78c6c; } .tok-com { color: #6b7089; font-style: italic; }
-.tok-pre { color: #89ddff; } .tok-fn { color: #82aaff; } .tok-type { color: #ffcb6b; }
+/* 구문 강조 토큰 (어두운 코드 배경에서 또렷하도록 대비 강화) */
+.tok-key { color: #d8a6ff; } .tok-str { color: #c8e89a; }
+.tok-num { color: #ff9d7a; } .tok-com { color: #9aa3bd; font-style: italic; }
+.tok-pre { color: #8fdcff; } .tok-fn { color: #93b4ff; } .tok-type { color: #ffd27a; }
 
 /* ===== 퀴즈 ===== */
 .quiz { background: var(--bg-elev); border: 1px solid var(--border);

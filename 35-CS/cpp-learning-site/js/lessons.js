@@ -80,6 +80,7 @@ int main() {
 <div class="callout">설치 없이 바로 연습하려면 온라인 컴파일러
 (godbolt.org, wandbox.org, replit)를 써도 된다.</div>
 `,
+        lang: "bash",
         code: `# 터미널에서 컴파일 & 실행 (g++ 기준)
 g++ -std=c++17 -Wall -O2 hello.cpp -o hello
 ./hello
