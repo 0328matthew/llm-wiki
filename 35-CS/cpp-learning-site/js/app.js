@@ -177,10 +177,157 @@
     complete.textContent = isDone ? "완료됨 ✓ (클릭해 취소)" : "이 강의 완료 표시 ✓";
   }
 
+  /* =====================================================================
+   *  종합 퀴즈 코너 (개념 / 코딩)
+   * ===================================================================== */
+  function normalize(s) {
+    return s.trim().toLowerCase().replace(/\s+/g, " ").replace(/[();]/g, "").trim();
+  }
+
+  function renderConceptQ(q, i) {
+    const opts = q.options.map((o, oi) =>
+      `<button class="quiz-opt" data-o="${oi}" type="button">${esc(o)}</button>`
+    ).join("");
+    return `<div class="quiz-q qz" data-answer="${q.answer}">
+      <p><span class="q-num">${i + 1}</span> ${esc(q.q)}</p>
+      ${opts}
+      <div class="quiz-explain hidden">${esc(q.explain)}</div>
+    </div>`;
+  }
+
+  function renderCodingQ(q, i) {
+    const codeHtml = q.code ? `<pre class="code qz-code"><code>${highlight(q.code)}</code></pre>` : "";
+    if (q.type === "output") {
+      const opts = q.options.map((o, oi) =>
+        `<button class="quiz-opt" data-o="${oi}" type="button"><code>${esc(o)}</code></button>`
+      ).join("");
+      return `<div class="quiz-q qz" data-answer="${q.answer}">
+        <p><span class="q-num">${i + 1}</span> <span class="badge">출력 예측</span> ${esc(q.q)}</p>
+        ${codeHtml}
+        ${opts}
+        <div class="quiz-explain hidden">${esc(q.explain)}</div>
+      </div>`;
+    }
+    // fill
+    const accept = q.accept.map(normalize);
+    return `<div class="quiz-q qz fill" data-accept='${esc(JSON.stringify(accept))}'>
+      <p><span class="q-num">${i + 1}</span> <span class="badge fill-badge">빈칸 채우기</span> ${esc(q.q)}</p>
+      ${codeHtml}
+      <div class="fill-row">
+        <input class="fill-input" type="text" placeholder="빈칸에 들어갈 코드" autocomplete="off" spellcheck="false" />
+        <button class="fill-check" type="button">확인</button>
+      </div>
+      <div class="fill-feedback hidden"></div>
+      <div class="quiz-explain hidden">${esc(q.explain)}</div>
+    </div>`;
+  }
+
+  let quizTab = "concept";
+  function renderQuizPage() {
+    const view = $("#quizView");
+    const concept = QUIZ_BANK.concept;
+    const coding = QUIZ_BANK.coding;
+    const total = quizTab === "concept" ? concept.length : coding.length;
+    const list = quizTab === "concept"
+      ? concept.map(renderConceptQ).join("")
+      : coding.map(renderCodingQ).join("");
+
+    view.innerHTML = `
+      <div class="lesson">
+        <div class="crumb">📝 종합 퀴즈</div>
+        <h1>실력 점검 퀴즈</h1>
+        <p class="summary">개념 이해와 코드 읽기/쓰기를 나눠서 확인해 보세요. 푼 만큼 점수가 올라갑니다.</p>
+        <div class="qz-tabs">
+          <button class="qz-tab ${quizTab === "concept" ? "active" : ""}" data-tab="concept">
+            개념 문제 <span class="cnt">${concept.length}</span>
+          </button>
+          <button class="qz-tab ${quizTab === "coding" ? "active" : ""}" data-tab="coding">
+            코딩 문제 <span class="cnt">${coding.length}</span>
+          </button>
+        </div>
+        <div class="qz-score">
+          이 탭 점수: <strong id="qzScore">0</strong> / ${total}
+          <button id="qzReset" class="link-btn">다시 풀기</button>
+        </div>
+        <div id="qzList">${list}</div>
+      </div>`;
+
+    document.title = "종합 퀴즈 · C++ 학습 사이트";
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+    // 탭 전환
+    $$(".qz-tab", view).forEach(t => t.addEventListener("click", () => {
+      quizTab = t.dataset.tab; renderQuizPage();
+    }));
+    $("#qzReset").addEventListener("click", renderQuizPage);
+
+    bindQuizScoring(view);
+    highlightActiveNav("__quiz__");
+    closeSidebar();
+  }
+
+  // 종합 퀴즈 채점 + 점수 카운트
+  function bindQuizScoring(scope) {
+    let score = 0;
+    const scoreEl = $("#qzScore", scope);
+    const bump = () => { score++; if (scoreEl) scoreEl.textContent = String(score); };
+
+    // 객관식(개념 + 출력 예측)
+    $$(".quiz-q.qz:not(.fill)", scope).forEach(block => {
+      const answer = Number(block.dataset.answer);
+      const explain = $(".quiz-explain", block);
+      $$(".quiz-opt", block).forEach(opt => {
+        opt.addEventListener("click", () => {
+          if (block.dataset.answered) return;
+          block.dataset.answered = "1";
+          const chosen = Number(opt.dataset.o);
+          $$(".quiz-opt", block).forEach((o, i) => {
+            o.disabled = true;
+            if (i === answer) o.classList.add("correct");
+          });
+          if (chosen === answer) bump(); else opt.classList.add("wrong");
+          explain.classList.remove("hidden");
+        });
+      });
+    });
+
+    // 빈칸 채우기
+    $$(".quiz-q.qz.fill", scope).forEach(block => {
+      const accept = JSON.parse(block.dataset.accept);
+      const input = $(".fill-input", block);
+      const btn = $(".fill-check", block);
+      const fb = $(".fill-feedback", block);
+      const explain = $(".quiz-explain", block);
+      const grade = () => {
+        if (block.dataset.answered) return;
+        const val = normalize(input.value);
+        if (!val) return;
+        block.dataset.answered = "1";
+        input.disabled = true; btn.disabled = true;
+        const ok = accept.includes(val);
+        fb.classList.remove("hidden");
+        if (ok) {
+          fb.textContent = "정답입니다! ✓"; fb.classList.add("ok");
+          input.classList.add("ok"); bump();
+        } else {
+          fb.textContent = `오답 — 정답: ${accept[0]}`; fb.classList.add("ng");
+          input.classList.add("ng");
+        }
+        explain.classList.remove("hidden");
+      };
+      btn.addEventListener("click", grade);
+      input.addEventListener("keydown", e => { if (e.key === "Enter") grade(); });
+    });
+  }
+
   /* ---------- 사이드바 ---------- */
   function buildNav() {
     const nav = $("#nav");
-    nav.innerHTML = CURRICULUM.map(stage => {
+    const quizLink = `<a class="nav-item quiz-link" href="#quiz" data-id="__quiz__">
+        <span class="nav-check quiz-ic">📝</span>
+        <span>종합 퀴즈</span>
+      </a>`;
+    nav.innerHTML = quizLink + CURRICULUM.map(stage => {
       const items = stage.lessons.map(l => `
         <a class="nav-item ${done.has(l.id) ? "done" : ""}" href="#${l.id}" data-id="${l.id}">
           <span class="nav-check">✓</span>
@@ -261,7 +408,16 @@
   /* ---------- 라우팅 ---------- */
   function route() {
     const id = location.hash.replace(/^#/, "") || FLAT_LESSONS[0].id;
-    renderLesson(id);
+    const lessonView = $("#lessonView"), quizView = $("#quizView");
+    if (id === "quiz") {
+      lessonView.hidden = true;
+      quizView.hidden = false;
+      renderQuizPage();
+    } else {
+      quizView.hidden = true;
+      lessonView.hidden = false;
+      renderLesson(id);
+    }
   }
 
   /* ---------- 초기화 ---------- */

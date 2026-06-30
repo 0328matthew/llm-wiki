@@ -38,13 +38,19 @@
 
     <!-- 본문 -->
     <main class="content">
-      <article id="lesson" class="lesson"><!-- JS가 채움 --></article>
+      <!-- 강의 뷰 -->
+      <div id="lessonView">
+        <article id="lesson" class="lesson"><!-- JS가 채움 --></article>
 
-      <div class="lesson-nav">
-        <button id="prevBtn" class="nav-btn">← 이전</button>
-        <button id="completeBtn" class="complete-btn">이 강의 완료 표시 ✓</button>
-        <button id="nextBtn" class="nav-btn">다음 →</button>
+        <div class="lesson-nav">
+          <button id="prevBtn" class="nav-btn">← 이전</button>
+          <button id="completeBtn" class="complete-btn">이 강의 완료 표시 ✓</button>
+          <button id="nextBtn" class="nav-btn">다음 →</button>
+        </div>
       </div>
+
+      <!-- 종합 퀴즈 뷰 -->
+      <div id="quizView" hidden><!-- JS가 채움 --></div>
 
       <footer class="footer">
         <p>llm-wiki · 35-CS · C++ 학습 사이트 — 외부 라이브러리 없이 동작하는 정적 사이트</p>
@@ -53,6 +59,7 @@
   </div>
 
   <script src="js/lessons.js"></script>
+  <script src="js/quizzes.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
