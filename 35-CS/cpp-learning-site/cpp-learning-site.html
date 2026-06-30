@@ -1942,11 +1942,17 @@ ______ p;`,
     });
     $("#completeBtn").addEventListener("click", () => {
       const id = FLAT_LESSONS[currentIdx].id;
-      if (done.has(id)) done.delete(id); else done.add(id);
+      const marking = !done.has(id);          // 완료로 표시하는 동작인가?
+      if (marking) done.add(id); else done.delete(id);
       setDone(done);
       updateLessonNav(currentIdx);
       refreshNavChecks();
       updateProgress();
+      // 완료로 표시했고 다음 강의가 있으면 자동으로 넘어간다 (체크 표시가 잠깐 보이도록 딜레이)
+      if (marking && currentIdx < FLAT_LESSONS.length - 1) {
+        const nextId = FLAT_LESSONS[currentIdx + 1].id;
+        setTimeout(() => { location.hash = nextId; }, 350);
+      }
     });
     $("#resetProgress").addEventListener("click", () => {
       if (!confirm("진행도를 모두 초기화할까요?")) return;
