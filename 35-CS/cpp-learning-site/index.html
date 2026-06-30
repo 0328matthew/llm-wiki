@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C++ 학습 사이트 · llm-wiki</title>
+  <meta name="description" content="입문부터 모던 C++까지 — 코드 예제와 퀴즈로 배우는 C++ 학습 사이트" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- 상단 바 -->
+  <header class="topbar">
+    <button id="menuToggle" class="icon-btn" aria-label="메뉴 열기">☰</button>
+    <a class="brand" href="#intro">
+      <span class="logo">C++</span>
+      <span class="brand-text">학습 사이트</span>
+    </a>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="강의 검색…" autocomplete="off" />
+      <ul id="searchResults" class="search-results" hidden></ul>
+    </div>
+    <button id="themeToggle" class="icon-btn" aria-label="테마 전환" title="다크/라이트">🌙</button>
+  </header>
+
+  <!-- 진행도 바 -->
+  <div class="progress-bar"><div id="progressFill" class="progress-fill"></div></div>
+
+  <div class="layout">
+    <!-- 사이드바 -->
+    <aside id="sidebar" class="sidebar">
+      <div class="progress-text">
+        진행도 <strong id="progressCount">0/0</strong>
+        <button id="resetProgress" class="link-btn" title="진행도 초기화">초기화</button>
+      </div>
+      <nav id="nav" class="nav"><!-- JS가 채움 --></nav>
+    </aside>
+    <div id="overlay" class="overlay" hidden></div>
+
+    <!-- 본문 -->
+    <main class="content">
+      <article id="lesson" class="lesson"><!-- JS가 채움 --></article>
+
+      <div class="lesson-nav">
+        <button id="prevBtn" class="nav-btn">← 이전</button>
+        <button id="completeBtn" class="complete-btn">이 강의 완료 표시 ✓</button>
+        <button id="nextBtn" class="nav-btn">다음 →</button>
+      </div>
+
+      <footer class="footer">
+        <p>llm-wiki · 35-CS · C++ 학습 사이트 — 외부 라이브러리 없이 동작하는 정적 사이트</p>
+      </footer>
+    </main>
+  </div>
+
+  <script src="js/lessons.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
