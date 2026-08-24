@@ -26,7 +26,7 @@ tags: [moc, me, mechanical-engineering]
 ## 응용수학 → [[Math-MOC]]
 
 ## 기계공학 × LLM 아이디어
-> 이런 걸 [[30-Projects|프로젝트]]로 만들어볼 수 있음
+> 이런 걸 프로젝트로 만들어볼 수 있음
 - 📐 자유물체도(FBD) 설명 봇 — 문제 사진 → 풀이 단계 설명
 - 🔥 열역학 사이클 시뮬레이터 + LLM 해설
 - 🧪 재료물성 챗봇 (Fe-C 상태도, MIL-HDBK 데이터)
