@@ -84,6 +84,6 @@ MATLAB:
 
 ---
 
-← [[Ch14 Curve Fitting — Linear Regression]] | → [[Ch17 Splines]]
+← [[Ch14 Curve Fitting — Linear Regression]] | → [[Ch17 Polynomial Interpolation]]
 
 #numerical-analysis #ch15 #polynomial-regression #nonlinear-regression
