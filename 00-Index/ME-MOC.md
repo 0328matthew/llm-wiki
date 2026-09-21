@@ -22,6 +22,7 @@ tags: [moc, me, mechanical-engineering]
 - [[Kinematics]] — 기구학 · 4-bar, 캠, 기어, 자유도
 - [[Materials Science]] — 재료공학 · 결정·결함·강화·파괴·상태도
 - [[Nuclear Engineering]] — 원자력공학 · 노심물리·열수력·핵연료주기
+- [[Manufacturing Processes]] — 기계공작법 · 공업 재료·재료 성질·주조 공정
 
 ## 응용수학 → [[Math-MOC]]
 

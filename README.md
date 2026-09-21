@@ -20,7 +20,8 @@ llm-wiki/
 │   ├── MechanicsOfMaterials/ 재료역학
 │   ├── Kinematics/          기구학
 │   ├── MaterialsScience/    재료공학
-│   └── NuclearEngineering/  원자력공학
+│   ├── NuclearEngineering/  원자력공학
+│   └── ManufacturingProcesses/ 기계공작법
 ├── 25-Math/                 응용수학
 │   ├── NumericalAnalysis/   수치해석
 │   └── DifferentialEquations/ 미분방정식
@@ -78,7 +79,7 @@ git push
 - 태그는 frontmatter `tags: [concept, me]` 식으로
 
 ## 시드 노트
-**ME**: Free Body Diagram · Newton 운동방정식 · 열역학 제1법칙 · Bernoulli 방정식 · 응력과 변형률 · 자유도와 Grübler 공식 · 결정구조
+**ME**: Free Body Diagram · Newton 운동방정식 · 열역학 제1법칙 · Bernoulli 방정식 · 응력과 변형률 · 자유도와 Grübler 공식 · 결정구조 · 공업 재료와 성질 · 금속 주조
 **Math**: 비선형 방정식 풀이 · 1계 ODE 풀이법
 
 → 각 폴더의 다음 노트는 MOC의 비어있는 `[[링크]]` 를 따라가며 채우면 됨.
