@@ -24,6 +24,11 @@ tags: [moc, me, mechanical-engineering]
 - [[Nuclear Engineering]] — 원자력공학 · 노심물리·열수력·핵연료주기
 - [[Manufacturing Processes]] — 기계공작법 · 공업 재료·재료 성질·주조 공정
 
+## 2026년 2학기 강의 자료
+- [[Applied Thermodynamics]] — 응용열역학·엑서지 (기초 [[Thermodynamics]]와 별도)
+- [[Electrical Engineering]] — 전기전자공학개론·회로 해석
+- [[Engineering Drawing]] — 전산제도·투상·스케치
+
 ## 응용수학 → [[Math-MOC]]
 
 ## 기계공학 × LLM 아이디어
