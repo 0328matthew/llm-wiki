@@ -1,53 +1,42 @@
 ---
 title: "과목 소개"
-tags: [note, math, lecture]
+tags: [note, math, linear-algebra, lecture]
 domain: Math
 subject: LinearAlgebra
+lecture: 0
 created: 2026-09-21
 source_pdf: "https://drive.google.com/file/d/16N2jmE2ZIrhA1y0eZcDc8Q9atKMv0W3J/view"
 ---
 
-# 과목 소개
-
-⬅︎ [[Linear Algebra]]
+⬅︎ [[Linear Algebra]] · [[Lecture01 벡터와 행렬]]
 
 ## 한 줄 요약
-공학선형대수학 강의의 전체 흐름과 학습 목표를 확인한다.
+공학선형대수학의 계산·공간·변환·고유구조·직교성·응용이 이어지는 흐름을 잡는다.
 
-## 강의자료 본문
+---
 
-원본 PDF의 텍스트 계층을 페이지별로 옮겼다. 그림, 사진, 손글씨 및 일부 수식은 텍스트로 완전히 옮겨지지 않으므로 원본을 함께 확인한다.
+## 학습 지도
+이 과목은 **연립방정식 → 벡터공간 → 선형변환 → 고유값 → 직교성 → 응용** 순서로 이어진다. 한 주제의 계산법을 외우기 전에 그 계산이 어떤 공간과 변환을 설명하는지 확인한다.
 
-### 1쪽
+| 단계 | 강의 | 핵심 질문 |
+|---|---|---|
+| 행렬 계산 | [[Lecture01 벡터와 행렬]] ~ [[Lecture05 옴의 법칙과 마르코프 연쇄]] | 연립방정식을 어떻게 풀고 모델로 만드는가? |
+| 추상화 | [[Lecture06 벡터공간]] ~ [[Lecture12 행렬식]] | 기저와 변환이 바뀌어도 무엇이 유지되는가? |
+| 고유구조 | [[Lecture13 고유값과 대각화]] ~ [[Lecture16 미분방정식 응용]] | 반복 작용과 동역학을 단순하게 만드는 좌표는? |
+| 직교와 응용 | [[Lecture17 그람-슈미트 직교화]] ~ [[Lecture24 복소벡터공간]] | 사영, 최소제곱, SVD를 어떻게 연결하는가? |
 
-공학선형대수학
-Text Book References
-중간 : 30% 기말 : 40%
-과제 : 20% 출석 : 10%
+## 공부할 때 확인할 것
+- 새 정리마다 **정의역·공역, 행렬 크기, 기저, 가정**을 먼저 적는다.
+- 계산 결과는 원래 식에 대입하거나 차원과 부호로 검산한다.
+- 강의 계획에 포함된 평가 비율·일정 등은 변경될 수 있으므로 원본 계획표를 확인한다.
 
-### 2쪽
-
-강의 일정
-주차 내용 Textbook HW
-1주 Vectors and Matrices, Systems of Linear Equations, GaussJordan Elimination 1장
-2주 Inverse Matrix, LU Decomposition 1장
-3주 General Vector Space 3장
-4주 Linear Independence, Basis of a Vector Space 3장
-5주 Transition Matrix, Linear Transformations 4장
-6주 Dimension Theorem, Determinants 3장, 2장
-7주 보강
-8주 중간고사 (1~6주)
-9주 Eigenvalues, Diagonalization, Diagonalization of a Linear Operators 6장
-10주 Matrix Functions, Differential Equations 6장
-11주 Orthogonality, Gram-Schmidt Process, Orthogonal Complement 5장
-12주 Orthogonal Diagonalization, Quadratic Form 5장, 6장
-13주 Least Squares, QR Decomposition, Singular Value Decomposition 5장, 6장
-14주 Inner Product Space, Complex Vector Space 5장
-15주 보강
-16주 기말고사
+## 자주 하는 실수
+- 소거법·대각화·최소제곱을 별개의 계산 요령으로만 외우는 것. 각 방법이 어떤 공간, 기저, 해의 조건을 사용하는지 연결해서 확인한다.
 
 ## 관련 개념
+- [[1. 행렬]]
 - [[Math-MOC]]
 
 ## 참고
 - [원본 강의 PDF](https://drive.google.com/file/d/16N2jmE2ZIrhA1y0eZcDc8Q9atKMv0W3J/view)
+- 강의 자료의 도형·표·문제 그림은 원본 PDF에서 확인한다. 인쇄된 식도 원본과 대조해 학습한다.

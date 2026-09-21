@@ -1,112 +1,37 @@
 ---
 title: "직교여공간"
-tags: [note, math, lecture]
+tags: [note, math, linear-algebra, lecture]
 domain: Math
 subject: LinearAlgebra
+lecture: 18
 created: 2026-09-21
 source_pdf: "https://drive.google.com/file/d/1T4YNDnsB1JeiahO9T4WwGtSeu6vvkCSk/view"
 ---
 
-# 직교여공간
-
-⬅︎ [[Linear Algebra]]
+⬅︎ [[Lecture17 그람-슈미트 직교화]] · [[Linear Algebra]] · [[Lecture19 직교대각화]]
 
 ## 한 줄 요약
 부분공간에 직교하는 벡터의 공간을 구한다.
 
-## 강의자료 본문
+---
 
-원본 PDF의 텍스트 계층을 페이지별로 옮겼다. 그림, 사진, 손글씨 및 일부 수식은 텍스트로 완전히 옮겨지지 않으므로 원본을 함께 확인한다.
+## 직교여공간
+내적공간 $V$의 부분공간 $W$에 대해
+$$W^\perp=\{v\in V:\langle v,w\rangle=0\ \text{for every }w\in W\}.$$
+실수행렬에 대해 $(\operatorname{row}A)^\perp=\ker A$, $(\operatorname{col}A)^\perp=\ker A^T$이다. 어느 주변 공간의 직교여공간인지 확인한다.
 
-### 1쪽
+## 사영과 분해
+유한차원에서 $v=\operatorname{proj}_Wv+(v-\operatorname{proj}_Wv)$이고 두 항은 각각 $W,W^\perp$에 있다. 정규직교기저 $q_i$가 있으면 $\operatorname{proj}_Wv=\sum_i\langle v,q_i\rangle q_i$.
 
-Orthogonality
-Orthogonal Complements, Orthogonal Diagonalization
-W^
-W
-W^
-W = row(A ) W ^ = null (A )
-W = col (A ) ( )
-W ^ = null A T
+예를 들어 $xy$평면으로의 사영은 $(x,y,z)\mapsto(x,y,0)$, 직교 성분은 $(0,0,z)$다.
 
-### 2쪽
-
-Orthogonality v
-Orthogonal Complements, Orthogonal Diagonalization W
-projW v
-u2
-O u1
-Orthogonal projection of [3,2,4] on to
-the x - y plane in R 3
-Orthogonal projection of [3,2,4] on to
-a subspace of R 3 :
-W = Span{ [2 ,1,1], [1, - 2 ,0] }
-Orthogonal projection of [3,2,4] on to the plane
-W = {[ x, y, z ] | x + 2 y + z = 0}.
-
-### 3쪽
-
-Orthogonality
-Orthogonal Complements, Orthogonal Diagonalization
-A x=b ii) rank ( A ) < n
-m´n
-i) rank ( A ) = n infinitely many solutions
-b Î col ( A ) Û unique solution x = xr + xn x r Î row ( A ) , x n Î null ( A )
-b Ï col ( A ) Û no solution xr £ xr + xn = x
-null ( AT ) null ( A )
-é1 2 3 ù
-col ( A ) é1 2 3 ù é6ù xn
-A = êê 2 3 4 úú
-b A = êê 2 3 4 úú b = êê 9 úú x
-inconsistant êë 3 4 5 úû row ( A )
-b êë 2 4 6 úû êë12 úû
-consistant é6ù é6ù
-b1 = êê 9 úú b 2 = êê 9 úú xr
-xr = ?
-êë12 úû êë13úû
-
-### 4쪽
-
-Orthogonality
-Orthogonal Complements, Orthogonal Diagonalization
-L(v1 ) = Av1 = 0
-W
-W L(v 2 ) = Av 2 = v 2
-v1 v 2 L(v 3 ) = Av 3 = v 3
-v3 æ0 0 0ö
-ç ÷
-D = ç0 1 0÷
-ç0 0 1÷
-è ø
-A = PDP -1
-P = ( v1 v2 v3 )
-L : R3 ® R3
-: orthogonal projection to the plane
-W = {[ x, y, z ] | x + 2 y + z = 0}.
-Find the standard matrix for the operator.
-
-### 5쪽
-
-Orthogonality
-Orthogonal Complements, Orthogonal Diagonalization
-L(v1 ) = Av1 = - v1
-W
-W L(v 2 ) = Av 2 = v 2
-v1 v 2 L(v 3 ) = Av 3 = v 3
-v3 æ -1 0 0ö
-ç ÷
-D = ç 0 1 0÷
-ç 0 0 1÷
-è ø
-A = PDP -1
-P = ( v1 v2 v3 )
-L : R3 ® R3
-: orthogonal reflection through the plane
-W = {[ x, y, z ] | x + 2 y + z = 0}.
-Find the standard matrix for the operator.
+## 자주 하는 실수
+- 사영벡터와 사영 후 남은 잔차를 뒤바꾸는 것.
 
 ## 관련 개념
+- [[1. 행렬]]
 - [[Math-MOC]]
 
 ## 참고
 - [원본 강의 PDF](https://drive.google.com/file/d/1T4YNDnsB1JeiahO9T4WwGtSeu6vvkCSk/view)
+- 강의 자료의 도형·표·문제 그림은 원본 PDF에서 확인한다. 인쇄된 식도 원본과 대조해 학습한다.

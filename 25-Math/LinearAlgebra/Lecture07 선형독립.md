@@ -1,98 +1,39 @@
 ---
 title: "선형독립"
-tags: [note, math, lecture]
+tags: [note, math, linear-algebra, lecture]
 domain: Math
 subject: LinearAlgebra
+lecture: 7
 created: 2026-09-21
 source_pdf: "https://drive.google.com/file/d/1EgaFPxW_bBKe6Omm00pICnbZfuwKynYD/view"
 ---
 
-# 선형독립
-
-⬅︎ [[Linear Algebra]]
+⬅︎ [[Lecture06 벡터공간]] · [[Linear Algebra]] · [[Lecture08 기저]]
 
 ## 한 줄 요약
 영벡터를 만드는 선형결합을 통해 독립성과 종속성을 판정한다.
 
-## 핵심 개념
-- $c_1v_1+\cdots+c_nv_n=0$의 해가 모두 0이면 선형독립이다.
+---
 
-## 강의자료 본문
+## 정의
+$v_1,\ldots,v_k$가 선형독립이라는 것은
+$$a_1v_1+\cdots+a_kv_k=0\quad\Longrightarrow\quad a_1=\cdots=a_k=0$$
+이라는 뜻이다. 0이 아닌 계수로 영벡터가 만들어지면 선형종속이다.
 
-원본 PDF의 텍스트 계층을 페이지별로 옮겼다. 그림, 사진, 손글씨 및 일부 수식은 텍스트로 완전히 옮겨지지 않으므로 원본을 함께 확인한다.
+## 판정 절차
+벡터들을 행렬의 **열**로 나열하고 $Ax=0$을 소거한다. 모든 열에 피벗이 있으면 독립, 자유변수가 있으면 종속이다. $\mathbb R^n$에서 $n$개를 초과하는 벡터는 반드시 종속이다.
 
-### 1쪽
+## 생성과의 관계
+독립은 '중복이 없는가'이고 생성은 '공간 전체를 덮는가'이다. 한쪽만 만족할 수 있다. 두 조건을 함께 만족하는 집합이 [[Lecture08 기저|기저]]다.
 
-General Vector Spaces
-Subspaces, Span
-
-### 2쪽
-
-General Vector Spaces
-Subspaces, Span
-R3
-xy Plane
-Span( {i, j})
-Span {1, x, x 2 } )
-
-### 3쪽
-
-General Vector Spaces
-Subspaces, Span
-ì[ 1, 4, - 1, - 5],ü
-ï[ 2, 8, 5, 4],ï
-ï ï
-S =í ý
-ï [ - 1, -4, 2, 7 ], ï
-ïî[ 6, 24,-1,-20] ïþ
-
-### 4쪽
-
-General Vector Spaces
-Linear Independence, Basis, Dimension
-
-### 5쪽
-
-General Vector Spaces
-Linear Independence, Basis, Dimension
-é 1 ù é- 1ù é - 2ù é1ù é1 ù é 2ù
-ê- 1ú ê 1 ú ê2ú ê- 1ú ê1 ú ê 2ú
-ê ú ê ú ê ú ê ú ê ú ê ú
-êë 1 úû êë 2 úû êë 3 úû êë 1 úû êë2úû êë3úû
-
-### 6쪽
-
-General Vector Spaces
-Linear Independence, Basis, Dimension
-é1ù é1 ù é 2ù é1 ù
-ê- 1ú ê1 ú ê 2ú ê 2ú
-ê ú ê ú ê ú ê ú
-êë 1 úû êë2úû êë3úû êë3úû
-
-### 7쪽
-
-General Vector Spaces
-Linear Independence, Basis, Dimension
-
-### 8쪽
-
-General Vector Spaces
-Linear Independence, Basis, Dimension
-é1ù é 0 ù é2ù
-ê- 1ú ê- 2ú ê0ú é1 ù é -1 ù é5ù
-ê ú ê ú ê ú ê0 ú ê -5 ú ê10 ú
-ê0ú ê 1 ú ê- 1ú ê ú ê ú ê ú
-ê ú ê ú ê ú êë2úû êë- 12úû êë30úû
-ë2û ë 0 û ë0û
-é 11 ù
-ê1ú é5ù
-ê ú=? ê10 ú = ?
-ê - 6ú ê ú
-ê ú êë30úû
-ë 10 û
+## 자주 하는 실수
+- 벡터를 행으로 놓고 열의 독립 여부를 판정했다고 주장하는 것.
+- 동차계에 항상 0해가 있다는 사실을 '종속'의 증거로 보는 것. 비자명한 해가 필요하다.
 
 ## 관련 개념
+- [[1. 행렬]]
 - [[Math-MOC]]
 
 ## 참고
 - [원본 강의 PDF](https://drive.google.com/file/d/1EgaFPxW_bBKe6Omm00pICnbZfuwKynYD/view)
+- 강의 자료의 도형·표·문제 그림은 원본 PDF에서 확인한다. 인쇄된 식도 원본과 대조해 학습한다.
