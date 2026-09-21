@@ -9,6 +9,10 @@ tags: [moc, math]
 
 ⬅︎ 돌아가기: [[Home]]
 
+## Linear Algebra — 공학선형대수학 → [[Linear Algebra]]
+> 위치: `25-Math/LinearAlgebra/` · 2026년 2학기 강의자료를 페이지별로 정리
+- [[1. 행렬]] — 기존 행렬 개념 노트
+
 ## Numerical Analysis — 수치해석 → [[Numerical Analysis]]
 > 위치: `25-Math/NumericalAnalysis/` · Chapra 교재 기반, 이현철 교수 강의 (PNU)
 - [[Ch04 오차 분석과 반올림|부동소수점과 오차]] — 절단오차 / 반올림오차
