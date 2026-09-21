@@ -1,92 +1,39 @@
 ---
 title: "기저"
-tags: [note, math, lecture]
+tags: [note, math, linear-algebra, lecture]
 domain: Math
 subject: LinearAlgebra
+lecture: 8
 created: 2026-09-21
 source_pdf: "https://drive.google.com/file/d/13RwI1xl5XY08iOVzCsIavMfP3AEpnLNv/view"
 ---
 
-# 기저
-
-⬅︎ [[Linear Algebra]]
+⬅︎ [[Lecture07 선형독립]] · [[Linear Algebra]] · [[Lecture09 기저 변환 행렬]]
 
 ## 한 줄 요약
-공간을 생성하는 선형독립 집합과 좌표를 다룬다.
+기저는 공간을 생성하면서 중복이 없는 벡터 집합이고, 이 집합이 좌표의 기준을 정한다.
 
-## 강의자료 본문
+---
 
-원본 PDF의 텍스트 계층을 페이지별로 옮겼다. 그림, 사진, 손글씨 및 일부 수식은 텍스트로 완전히 옮겨지지 않으므로 원본을 함께 확인한다.
+## 기저와 차원
+기저는 공간을 생성하면서 선형독립인 벡터 집합이다. 기저가 주어지면 모든 벡터가 **유일한** 선형결합으로 표현된다. 유한차원 공간의 기저 원소 수가 차원이다.
 
-### 1쪽
+## 기저 찾기
+생성 집합에서 종속인 벡터를 제거하거나, 독립 집합에 부족한 방향을 더한다. 주어진 행렬의 **피벗 열을 원래 행렬에서** 가져오면 열공간의 기저가 된다. 행 소거한 결과의 피벗 열 자체를 원래 열공간의 기저라고 쓰지 않는다.
 
-General Vector Spaces
-Linear Independence, Basis, Dimension
-é1ù é0ù é1ù é 1 ù
-ê0ú ê1ú ê1ú ê-1ú
-ë û ë û ëûë û
-é1ù é0ù é1ù
-ê0ú ê1ú ê1ú
-ë û ë û ëû
+## 좌표
+$B=(b_1,\ldots,b_n)$일 때 $v=\sum c_ib_i$라면 $[v]_B=(c_1,\ldots,c_n)^T$이다. 같은 $v$라도 기저가 바뀌면 좌표는 달라진다.
 
-### 2쪽
+## 예제
+$B=((1,1),(1,-1))$에서 $(2,0)=(1,1)+(1,-1)$이므로 $[(2,0)]_B=(1,1)^T$다.
 
-General Vector Spaces
-Linear Independence, Basis, Dimension
-é1ù é0ù é0ù
-ê0ú ê1ú ê0ú
-ê ú ê úê ú
-êë0úû êë0úû êë1úû
-Span 1, x 3 }
-
-### 3쪽
-
-General Vector Spaces
-Constructing Special Bases
-[ 1,-1, 1 ] [ 1,-1, 1 ]
-[- 1, 1, 1 ] [- 1, 1, 1 ]
-[ 2,-2, 0 ] [ 0, 0, 1 ]
-[ 0, 0, 2 ] [ 1, 1, 0 ]
-
-### 4쪽
-
-General Vector Spaces
-Constructing Special Bases
-é1ù é0ù
-ê0ú ê1ú
-ê ú ê ú A = {e1 , e 2 , e 3 }
-êë1úû êë1úû
-A = {e1 , e 2 , e3 , e 4 }
-
-### 5쪽
-
-General Vector Spaces
-Vector Spaces associated with a Matrix
-row space of A = row( A)
-column space of A = row( A T )
-é 1 1 -2 ù row(A ) = ?
-null space of A = null ( A) = { x Ax = 0 } A = êê 1 - 1 0 úú
-êë 2 1 - 3 úû col (A ) = ?
-ìrow(A ) = col A T ( ) é
-ê
-1 1 1 -3 ù
-ú null (A ) = ?
-ï
-ïcol (A ) = row A
-A Þ í
-T
-( ) A=ê
-1 0 -1 0 ú
-ê 0 1 1 -2 ú
-ïnull (A ) ê
--1 1 -1
-ú ( )
-null A T = ?
-ïnull A T
-î ( ) ë 1 û
+## 자주 하는 실수
+- 기저의 순서를 무시하는 것: 같은 벡터 목록이라도 순서를 바꾸면 좌표 순서가 바뀐다.
 
 ## 관련 개념
+- [[1. 행렬]]
 - [[Math-MOC]]
 
 ## 참고
 - [원본 강의 PDF](https://drive.google.com/file/d/13RwI1xl5XY08iOVzCsIavMfP3AEpnLNv/view)
+- 강의 자료의 도형·표·문제 그림은 원본 PDF에서 확인한다. 인쇄된 식도 원본과 대조해 학습한다.

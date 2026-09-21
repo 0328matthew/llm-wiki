@@ -1,104 +1,37 @@
 ---
 title: "내적공간"
-tags: [note, math, lecture]
+tags: [note, math, linear-algebra, lecture]
 domain: Math
 subject: LinearAlgebra
+lecture: 23
 created: 2026-09-21
 source_pdf: "https://drive.google.com/file/d/1BeZUKkD-uFeCUKb53n4o1U4X3sVLBALx/view"
 ---
 
-# 내적공간
-
-⬅︎ [[Linear Algebra]]
+⬅︎ [[Lecture22 특잇값 분해]] · [[Linear Algebra]] · [[Lecture24 복소벡터공간]]
 
 ## 한 줄 요약
 내적에서 길이·직교성·사영을 정의한다.
 
-## 강의자료 본문
+---
 
-원본 PDF의 텍스트 계층을 페이지별로 옮겼다. 그림, 사진, 손글씨 및 일부 수식은 텍스트로 완전히 옮겨지지 않으므로 원본을 함께 확인한다.
+## 내적과 길이
+내적 $\langle u,v\rangle$은 양의 정부호이며(0 아닌 $v$에 대해 $\langle v,v\rangle>0$), 선형성과 대칭성을 만족한다. 길이 $\|v\|=\sqrt{\langle v,v\rangle}$, 직교성 $\langle u,v\rangle=0$을 정의한다.
 
-### 1쪽
+강의는 다항식 계수벡터의 내적과 함수공간의 적분 내적을 비교한다. 예를 들어 실수 함수에 대해
+$$\langle f,g\rangle=\int_a^b f(x)g(x)\,dx.$$
+어떤 내적을 택하느냐에 따라 같은 두 함수의 직교 여부가 달라질 수 있다.
 
-Inner Product Spaces
+## 정규직교기저
+$B=(q_1,\ldots,q_n)$가 정규직교기저라면 $v=\sum_i\langle v,q_i\rangle q_i$이고 좌표는 $[v]_B=(\langle v,q_1\rangle,\ldots)^T$이다.
 
-### 2쪽
-
-Inner Product Spaces
-
-### 3쪽
-
-Inner Product Spaces
-p, q Î Pn
-p = a0 + a1 x1
-+ L + an -1 x n -1 + an x n
-q = b0 + b1 x1
-+ L + bn -1 x n -1 + bn x n
-p, q = a0b0 + a1b1
-+ L + an -1bn -1 + anbn
-f , g Î F (a, b )
-f , g = ò f ( x )g ( x )dx
-b
-a
-
-### 4쪽
-
-Inner Product Spaces
-p, q Î Pn f , g Î F (a, b )
-p = a0 + a1 x1 + L + an -1 x n -1 + an x n f = f (x) g = g (x)
-q = b0 + b1 x1 + L + bn -1 x n -1 + bn x n
-f , g = ò f ( x )g ( x )dx
-b
-a
-p, q = a0b0 + a1b1 + L + an -1bn -1 + anbn
-f , g Î F (0,1)
-p = x -1
-2 q=x p, q = 0 f = x2 -1 g=x f , g = -1 4
-p = x2 -1 3 q =1 p, q = - 1 3 f = x2 -1 3 g =1 f,g = 0
-
-### 5쪽
-
-Inner Product Spaces
-
-### 6쪽
-
-Inner Product Spaces
-v = a1 v1 + a2 v 2 + L + ak v k
-[v ]B = [a1 , a2 , L, ak ]
-
-### 7쪽
-
-Inner Product Spaces
-V = P2
-+1
-f , g = ò f ( x )g ( x )dx
--1
-B = { w1 ,w 2 ,w 3 }
-= 1, x, x 2 }
-B ' = { v1 , v 2 , v 3 } = ?
-
-### 8쪽
-
-Inner Product Spaces
-
-### 9쪽
-
-Inner Product Spaces
-
-### 10쪽
-
-Inner Product Spaces
-V = P3
-+1
-f , g = ò f ( x ) g ( x ) dx
--1
-orthogonal projection
-of x3 onto P2 ?
-orthogonal projection
-of x3 onto P2^ ?
+## 자주 하는 실수
+- 함수의 적분 내적과 다항식의 **계수** 내적을 같은 것으로 취급하는 것.
 
 ## 관련 개념
+- [[1. 행렬]]
 - [[Math-MOC]]
 
 ## 참고
 - [원본 강의 PDF](https://drive.google.com/file/d/1BeZUKkD-uFeCUKb53n4o1U4X3sVLBALx/view)
+- 강의 자료의 도형·표·문제 그림은 원본 PDF에서 확인한다. 인쇄된 식도 원본과 대조해 학습한다.

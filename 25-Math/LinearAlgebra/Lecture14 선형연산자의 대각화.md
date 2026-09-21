@@ -1,117 +1,37 @@
 ---
 title: "선형연산자의 대각화"
-tags: [note, math, lecture]
+tags: [note, math, linear-algebra, lecture]
 domain: Math
 subject: LinearAlgebra
+lecture: 14
 created: 2026-09-21
 source_pdf: "https://drive.google.com/file/d/1ufqI3rrXoaiX-nQTu8ckCgQFfyrlxnF0/view"
 ---
 
-# 선형연산자의 대각화
-
-⬅︎ [[Linear Algebra]]
+⬅︎ [[Lecture13 고유값과 대각화]] · [[Linear Algebra]] · [[Lecture15 행렬함수]]
 
 ## 한 줄 요약
 고유벡터 기저에 대한 선형연산자의 대각 표현을 다룬다.
 
-## 강의자료 본문
+---
 
-원본 PDF의 텍스트 계층을 페이지별로 옮겼다. 그림, 사진, 손글씨 및 일부 수식은 텍스트로 완전히 옮겨지지 않으므로 원본을 함께 확인한다.
+## 행렬이 아닌 변환도 대각화한다
+선형연산자 $T:V\to V$에서 고유벡터 $v_i$를 기저로 택하면 $T(v_i)=\lambda_i v_i$이므로 이 기저에 대한 표현행렬은 대각행렬이다. **정의역과 공역이 같은 공간**이어야 고유값을 논할 수 있다.
 
-### 1쪽
+## 절차
+1. 먼저 기존 기저 $B$에 대한 행렬 $[T]_B$를 구한다.
+2. 특성다항식과 고유공간을 구해 독립인 고유벡터가 $\dim V$개인지 확인한다.
+3. 고유벡터 기저 $C$를 만들고 $[T]_C=D$로 쓴다.
 
-Eigenvalues
-Diagonalization of Linear Operators
-L : P2 ® P2
-L( p( x )) = xp' ( x ) + p( x + 1)
-2 2 4
-l1 = 3 ; p1 ( x ) = x + x +1
-3 3
-l2 = 2 ; p2 ( x ) = x + 1
-l3 = 1; p3 ( x ) = 1
-B = x 2 , x, 1 = ( b1 , b 2 , b 3 )
-æ 3 0 0ö
-ç ÷
-A = ç 2 2 0÷
-ç1 1 1÷
-è ø
+강의의 $P_2\to P_2$ 예에서는 $p(x)$에 대한 연산을 기저 다항식 각각에 적용해 계수벡터를 열로 배치한다.
 
-### 2쪽
-
-Eigenvalues
-Diagonalization of Linear Operators
-
-### 3쪽
-
-Eigenvalues
-Diagonalization of Linear Operators
-
-### 4쪽
-
-V
-Eigenvalues
-V
-L
-v w
-C B C B Diagonalization of Linear Operators
-n n n n
-L : P2 ® P2
-R R R R
-A D
-[ w ]C = A [ v ]C L( p( x )) = xp' ( x ) + p( x + 1)
-[ v ]C [ w ]C [ v ]B [ w ]B D = P -1AP
-[ w ]B = D [ v ]B P = PB ®C C = ( x 2 , x, 1 ) = ( c1 , c 2 , c3 )
-[ v ]C = PB®C [ v ]B [ w ]C = PB®C [ w ]B
-[L(x )] = (3,2,1)
-2
-C æ 3 0 0ö
-ç ÷
-[L(x )]C = (0,2,1) A = ç 2 2 0÷
-ç1 1 1÷
-[L(1)]C = (0,0,1) è ø
-æ 2 4 ö
-B = ç x 2 + x + 1, x + 1, 1 ÷ = ( b1 , b 2 , b3 )
-è 3 3 ø
-æ 2 3 0 0ö
-ç ÷
-P = éë [b1 ]C , [b 2 ]C , [b3 ]C ùû = ç 4 3 1 0 ÷
-ç 1 1 1÷
-è ø
-æ 3 0 0ö
-ç ÷
-D = ç0 2 0÷
-ç0 0 1÷
-è ø
-
-### 5쪽
-
-Eigenvalues
-Diagonalization of Linear Operators
-
-### 6쪽
-
-z
-Eigenvalues
-Diagonalization of Linear Operators
-[1,1,1] L : R3 ® R3 L(x) = 180o rotation of x about line l
-L(x) = Ax A=?
-y
-L ([1,1,1]) = [1,1,1] For any vector v on plane p : x + y + z = 0, L ( v ) = - v
-x l
-ìïl1 = 1 ìl2 = l3 = -1
-í ïï
-ïî v1 = [1,1,1] í v 2 and v 3 are any linearly independent two vectors on plane p
-ï
-ïî( v 2 = [ -1,1, 0] , v 3 = [ -1, 0,1])
-é1 -1 -1ù é1 0 0 ù é1 1 1ù é -1 2 2 ù
-æ ö
-1 1
-A = PDP -1 = êê1 1 0 úú êê0 -1 0 úú ç ÷ êê -1 2 -1úú = êê 2 -1 2 úú
-è3ø 3
-êë1 0 1 úû êë0 0 -1úû êë -1 -1 2 úû êë 2 2 -1úû
+## 자주 하는 실수
+- $T:P_2\to P_3$ 같은 서로 다른 공간 사이의 변환에 정사각행렬의 대각화 공식을 바로 적용하는 것.
 
 ## 관련 개념
+- [[1. 행렬]]
 - [[Math-MOC]]
 
 ## 참고
 - [원본 강의 PDF](https://drive.google.com/file/d/1ufqI3rrXoaiX-nQTu8ckCgQFfyrlxnF0/view)
+- 강의 자료의 도형·표·문제 그림은 원본 PDF에서 확인한다. 인쇄된 식도 원본과 대조해 학습한다.

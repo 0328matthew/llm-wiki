@@ -10,7 +10,7 @@ tags: [moc, math]
 ⬅︎ 돌아가기: [[Home]]
 
 ## Linear Algebra — 공학선형대수학 → [[Linear Algebra]]
-> 위치: `25-Math/LinearAlgebra/` · 2026년 2학기 강의자료를 페이지별로 정리
+> 위치: `25-Math/LinearAlgebra/` · 2026년 2학기 강의자료를 정의·식·예제·자주 하는 실수 중심으로 재구성
 - [[1. 행렬]] — 기존 행렬 개념 노트
 
 ## Numerical Analysis — 수치해석 → [[Numerical Analysis]]

@@ -1,108 +1,36 @@
 ---
 title: "복소벡터공간"
-tags: [note, math, lecture]
+tags: [note, math, linear-algebra, lecture]
 domain: Math
 subject: LinearAlgebra
+lecture: 24
 created: 2026-09-21
 source_pdf: "https://drive.google.com/file/d/15aBQh2Or3UqKN1O2Qw0uftdzZXWDZ6-_/view"
 ---
 
-# 복소벡터공간
-
-⬅︎ [[Linear Algebra]]
+⬅︎ [[Lecture23 내적공간]] · [[Linear Algebra]]
 
 ## 한 줄 요약
-복소수체 위의 벡터공간과 켤레 내적을 다룬다.
+복소수 공간의 길이와 직교성에는 전치 대신 켤레전치가 필요하다.
 
-## 강의자료 본문
+---
 
-원본 PDF의 텍스트 계층을 페이지별로 옮겼다. 그림, 사진, 손글씨 및 일부 수식은 텍스트로 완전히 옮겨지지 않으므로 원본을 함께 확인한다.
+## 복소 내적
+복소벡터공간에서는 켤레전치 $A^*=\overline A^{\,T}$를 사용한다. 한 가지 일관된 관례를 택하면 $\langle u,v\rangle=u^*v$이고
+$$\langle v,v\rangle=v^*v=\sum_i|v_i|^2\ge0.$$
+실수 공간의 $u^Tv$를 켤레 없이 그대로 쓰면 양의 정부호가 깨질 수 있다. 교재에 따라 어느 인수에서 선형인지 관례가 반대일 수 있다.
 
-### 1쪽
+## 직교성과 행렬
+$u^*v=0$이면 직교한다. $Q^*Q=I$인 행렬은 유니터리 행렬, $A^*=A$인 행렬은 에르미트 행렬이다. 복소수 고유벡터의 직교정규화에는 복소 내적의 켤레를 포함한 [[Lecture17 그람-슈미트 직교화|그람-슈미트 과정]]을 쓴다.
 
-Complex Vector Space
-Complex Vector Spaces, Orthogonality in Cn
-z = [1 + 2i, 2 - i ] w = [2 + i, 1 - 2i ]
-z × w = (1 + 2i )(2 - i ) + (2 - i )(1 + 2i )
-
-### 2쪽
-
-Complex Vector Space
-Complex Vector Spaces, Orthogonality in Cn
-
-### 3쪽
-
-Complex Vector Space
-Complex Vector Spaces, Orthogonality in Cn
-Conjugate Transpose
-
-### 4쪽
-
-Complex Vector Space
-Complex Vector Spaces, Orthogonality in Cn
-
-### 5쪽
-
-Complex Vector Space
-Complex Vector Spaces, Orthogonality in Cn
-
-### 6쪽
-
-Complex Vector Space
-Complex Vector Spaces, Orthogonality in Cn
-é0 - i ù é1 i ù
-A=ê ú A=ê ú
-ë1 1 + i û ëi 3û
-
-### 7쪽
-
-Complex Vector Space
-Complex Vector Spaces, Orthogonality in Cn
-Linear Independence Basis
-Span Subspace Dimension æ é x ù ö é x + yi ù
-T çç ê ú ÷÷ = ê ú
-è ë y û ø ë y + xi û
-Coordinatization
-æ é xù ö éx ù
-T çç ê ú ÷÷ = ê ú
-Real Vector Space è ë yû ø ë y û
-Complex Vector Space
-
-### 8쪽
-
-Complex Vector Space
-Complex Vector Spaces, Orthogonality in Cn
-éi ù
-ê ú
-Find an orthogonal basis for the complex vector space C 3 containing w1 = ê1ú
-êë0úû
-éi ù é1ù é0 ù
-1
-B = {v1 , v 2 , v 3 } v1 = êê1úú v 2 = êê i úú v 2 = êê0úú
-2
-êë0úû êë0úû êë1úû
-
-### 9쪽
-
-Complex Vector Space
-Complex Vector Spaces, Orthogonality in Cn
-
-### 10쪽
-
-Complex Vector Space
-Complex Vector Spaces, Orthogonality in Cn
-é -i i ù é 1 -1 ù
-ê 2 é1 i ù ê 2 2ú
-é1 - i ù 2ú A=ê P=ê
-A=ê ú P=ê
-1 úú ëi 1û
-ú
-ê 1 1 úú
-ëi 1 û ê 1
-ëê 2 2 ûú ëê 2 2 ûú
+## 자주 하는 실수
+- 전치 $A^T$와 켤레전치 $A^*$를 혼동하는 것.
+- 복소수의 제곱 $z^2$를 길이 제곱 $|z|^2=z\overline z$로 쓰는 것.
 
 ## 관련 개념
+- [[1. 행렬]]
 - [[Math-MOC]]
 
 ## 참고
 - [원본 강의 PDF](https://drive.google.com/file/d/15aBQh2Or3UqKN1O2Qw0uftdzZXWDZ6-_/view)
+- 강의 자료의 도형·표·문제 그림은 원본 PDF에서 확인한다. 인쇄된 식도 원본과 대조해 학습한다.

@@ -1,59 +1,38 @@
 ---
 title: "고유값과 대각화"
-tags: [note, math, lecture]
+tags: [note, math, linear-algebra, lecture]
 domain: Math
 subject: LinearAlgebra
+lecture: 13
 created: 2026-09-21
 source_pdf: "https://drive.google.com/file/d/1qOId7hb6uDLXL_TO4yq_bDdmlsYjUErk/view"
 ---
 
-# 고유값과 대각화
-
-⬅︎ [[Linear Algebra]]
+⬅︎ [[Lecture12 행렬식]] · [[Linear Algebra]] · [[Lecture14 선형연산자의 대각화]]
 
 ## 한 줄 요약
 고유값·고유벡터를 구하고 행렬의 대각화 가능성을 살핀다.
 
-## 핵심 개념
-- $Av=\lambda v$, $\det(A-\lambda I)=0$을 이용한다.
-- 독립인 고유벡터가 충분하면 $A=PDP^{-1}$.
+---
 
-## 강의자료 본문
+## 고유값과 고유벡터
+$Av=\lambda v$를 만족하는 $v\ne0$가 고유벡터다. 고유값은 $\det(A-\lambda I)=0$으로 구하고, 각 고유값에 대해 $(A-\lambda I)v=0$을 풀어 고유공간을 찾는다.
 
-원본 PDF의 텍스트 계층을 페이지별로 옮겼다. 그림, 사진, 손글씨 및 일부 수식은 텍스트로 완전히 옮겨지지 않으므로 원본을 함께 확인한다.
+## 대각화
+$n\times n$ 행렬에 독립인 고유벡터가 $n$개 있으면
+$$A=PDP^{-1},\qquad D=\operatorname{diag}(\lambda_1,\ldots,\lambda_n).$$
+$P$의 열과 $D$의 대각 원소는 같은 순서로 대응한다. 그러면 $A^k=PD^kP^{-1}$로 계산한다.
 
-### 1쪽
+## 중복도
+대수적 중복도는 특성다항식에서 근이 반복되는 횟수, 기하적 중복도는 $\dim\ker(A-\lambda I)$이다. 어떤 고유값의 기하적 중복도가 대수적 중복도보다 작으면 독립인 고유벡터가 부족해 대각화할 수 없다.
 
-Eigenvalues
-Eigenvalues, Diagonalization
-
-### 2쪽
-
-Eigenvalues
-Eigenvalues, Diagonalization
-
-### 3쪽
-
-Eigenvalues
-Eigenvalues, Diagonalization
-
-### 4쪽
-
-Eigenvalues
-Eigenvalues, Diagonalization
-é 0 2 0ù
-A = êê- 1 3 0úú
-êë 0 0 3úû
-é 2 0 0ù
-é0 - 1ù
-A=ê ú A = êê 1 3 0úú
-ë1 2 û êë- 3 5 3úû
-é 1 -2 2 ù
-A = êê -2 1 2 úú
-Geometric Multiplicity êë -2 0 3 úû
+## 자주 하는 실수
+- $v=0$도 고유벡터에 포함하거나, 고유값만 모두 구하면 대각화 가능하다고 판단하는 것.
 
 ## 관련 개념
+- [[1. 행렬]]
 - [[Math-MOC]]
 
 ## 참고
 - [원본 강의 PDF](https://drive.google.com/file/d/1qOId7hb6uDLXL_TO4yq_bDdmlsYjUErk/view)
+- 강의 자료의 도형·표·문제 그림은 원본 PDF에서 확인한다. 인쇄된 식도 원본과 대조해 학습한다.

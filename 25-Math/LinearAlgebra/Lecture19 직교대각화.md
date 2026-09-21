@@ -1,81 +1,39 @@
 ---
 title: "직교대각화"
-tags: [note, math, lecture]
+tags: [note, math, linear-algebra, lecture]
 domain: Math
 subject: LinearAlgebra
+lecture: 19
 created: 2026-09-21
 source_pdf: "https://drive.google.com/file/d/1Mx8lc6MOcUjzq9Hm7bQ97-h5cYZEsr9B/view"
 ---
 
-# 직교대각화
-
-⬅︎ [[Linear Algebra]]
+⬅︎ [[Lecture18 직교여공간]] · [[Linear Algebra]] · [[Lecture20 이차형식]]
 
 ## 한 줄 요약
 대칭행렬의 직교 고유벡터 기저를 활용한다.
 
-## 핵심 개념
-- 실대칭행렬은 직교행렬 $Q$에 대해 $A=QDQ^T$로 표현할 수 있다.
+---
 
-## 강의자료 본문
+## 실대칭행렬의 특별한 성질
+$A=A^T$이면 서로 다른 고유값에 속한 고유벡터는 직교한다. 같은 고유값의 고유공간 안에서도 정규직교기저를 선택할 수 있으므로
+$$A=QDQ^T,\qquad Q^TQ=I$$
+로 직교대각화된다. 이 분해를 스펙트럼 분해라고도 부른다.
 
-원본 PDF의 텍스트 계층을 페이지별로 옮겼다. 그림, 사진, 손글씨 및 일부 수식은 텍스트로 완전히 옮겨지지 않으므로 원본을 함께 확인한다.
+## 계산 순서
+고유값을 구하고 각 고유공간의 기저를 직교정규화한 뒤, 열벡터로 $Q$를 만들고 같은 순서로 $D$의 대각에 고유값을 넣는다.
 
-### 1쪽
+## 예제
+$A=\begin{bmatrix}2&1\\1&2\end{bmatrix}$의 고유값은 $3,1$이고, 단위 고유벡터는 각각 $q_1=(1,1)^T/\sqrt2$, $q_2=(1,-1)^T/\sqrt2$다. $Q=[q_1\ q_2]$와 $D=\operatorname{diag}(3,1)$을 놓으면 $Q^TQ=I$와 $A=QDQ^T$를 직접 검산할 수 있다.
 
-Orthogonality
-Orthogonal Complements, Orthogonal Diagonalization
-Av1 × v 2
-= ( Av1 ) v 2
-T
-= v1T AT v 2
-= v1T Av 2
-= v1 × Av 2
-
-### 2쪽
-
-Orthogonality
-Orthogonal Complements, Orthogonal Diagonalization
-A : Symmetric Û
-Av1 × v 2 = v1 × Av 2
-Av1 × v 2 = l1 v1 × v 2
-v1 × Av 2 = l2 v1 × v 2
-Av1 × v 2 - v1 × Av 2
-= ( l1 - l2 ) v1 × v 2 = 0
-l1 ¹ l2 Þ v1 × v 2 = 0
-Spectral Decomposition or Eigenvalue Decomposition él1 0 L 0 ù éu1T ù
-ê0 l ê ú
-L 0 úú êuT2 ú
-D = P T AP A = PDP T = [ u1 u 2 L u n ]ê 2
-êM M O M úê M ú
-P = [u1 , u 2 , L , u n ] ê úê ú
-ë0 0 L ln û êëuTn úû
-: orthogonal matrix = l1u1u1T + l2u 2uT2 + L + lnu nuTn
-
-### 3쪽
-
-Orthogonality
-Orthogonal Complements, Orthogonal Diagonalization
-æ 4 2 2ö
-ç ÷
-A = ç 2 4 2÷
-ç 2 2 4÷
-è ø
-æ - 3 -1 2ö
-1 ç ÷
-P= ç 3 -1 2÷
-6 çç ÷
-è 0 2 2 ÷ø
-æ 2 0 0ö
-ç ÷
-D = ç 0 2 0÷
-ç0 0 8÷
-è ø
-※ The eigenspaces of a symmetric
-matrix A are orthogonal.
+## 자주 하는 실수
+- 일반적인 비대칭 실수행렬에도 반드시 $QDQ^T$가 된다고 가정하는 것.
+- 고유벡터를 직교하게 만든 뒤 길이를 1로 정규화하지 않는 것.
 
 ## 관련 개념
+- [[1. 행렬]]
 - [[Math-MOC]]
 
 ## 참고
 - [원본 강의 PDF](https://drive.google.com/file/d/1Mx8lc6MOcUjzq9Hm7bQ97-h5cYZEsr9B/view)
+- 강의 자료의 도형·표·문제 그림은 원본 PDF에서 확인한다. 인쇄된 식도 원본과 대조해 학습한다.
