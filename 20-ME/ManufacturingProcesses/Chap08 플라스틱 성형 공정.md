@@ -8,7 +8,7 @@ source: "기계공작법 강의자료 — M. P. Groover, *Introduction to Manufa
 created: 2026-09-22
 ---
 
-⬅︎ [[Chap06 주조 공정]] · [[Manufacturing Processes]] · [[ME-MOC]]
+⬅︎ [[Chap06 주조 공정]] · [[Manufacturing Processes]] · [[ME-MOC]] · 다음 → [[Chap09 고무 및 고분자 복합재 성형 공정]]
 
 ## 한 줄 요약
 플라스틱 성형은 **고분자를 흐르게 만든 뒤 원하는 곳에서 굳히는 과정**이다. 제품 형상에 따라 **압출·시트/필름/섬유·사출/압축/트랜스퍼·블로/회전/열성형**으로 갈리고, 공정 선택의 첫 기준은 재료가 **열가소성(TP)** 인지 **열경화성(TS)** 인지이다.
